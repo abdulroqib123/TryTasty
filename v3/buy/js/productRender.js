@@ -2,6 +2,8 @@ const productContainer = document.querySelector(".productContainer");
 import { filterAction } from "./productActions.js";
 
 //Temu products
+/*
+AFFILIATE ACCOUNT SUSPENDED
 fetch("../data/temuProduct.json")
   .then((response) => {
     if (!response.ok) {
@@ -53,6 +55,7 @@ fetch("../data/temuProduct.json")
 
     productContainer.prepend(temuProductsContainer);
   });
+*/
 
 //Amazon products
 fetch("../data/amazonProduct.json")
