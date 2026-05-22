@@ -130,109 +130,7 @@
             </section>
       -->
       <section id="videosPage">
-        <iframe
-          src="https://youtube.com/embed/Th1oKlZfYfc?si=uky6k0T7Vb7gjyzk"
-          title="YouTube video player"
-          frameborder="0"
-          allow="
-            accelerometer;
-            autoplay;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            web-share;
-          "
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <iframe
-          src="https://res.cloudinary.com/dc1bmavl5/video/upload/v1763814608/lv_0_20251114235851_lvrpqd.mp4"
-          title="TryTasty video player"
-          frameborder="0"
-          allow="
-            accelerometer;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            web-share;
-          "
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <iframe
-          src="https://res.cloudinary.com/dc1bmavl5/video/upload/v1765132053/lv_0_20251130130744_joccuz.mp4"
-          title="TryTasty video player"
-          frameborder="0"
-          allow="
-            accelerometer;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            web-share;
-          "
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <iframe
-          src="https://youtube.com/embed/KyaVdybiPVY?si=MjeMkkrklDtW5JVf"
-          title="YouTube video player"
-          frameborder="0"
-          allow="
-            accelerometer;
-            autoplay;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            web-share;
-          "
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <iframe
-          src="https://youtube.com/embed/VqO9uRMWUqE?si=iDoaVQqC0si_8hhp"
-          title="YouTube video player"
-          frameborder="0"
-          allow="
-            accelerometer;
-            autoplay;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            web-share;
-          "
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <iframe
-          src="https://www.youtube.com/embed/JJ6Xv2lJieE?si=W233CfFMdaSlyUsc"
-          title="YouTube video player"
-          frameborder="0"
-          allow="
-            accelerometer;
-            autoplay;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            web-share;
-          "
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <iframe
-          src="https://youtube.com/embed/62Vswot4D3s?si=w52tzmMNaxzljxmr"
-          title="YouTube video player"
-          frameborder="0"
-          allow="
-            accelerometer;
-            autoplay;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            web-share;
-          "
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+        
       </section>
     </main>
 
@@ -403,6 +301,32 @@ Unlock Exclusive Snack Ideas: Join Our Newsletter!
 
       <p>&copy;2025 TryTasty. All Rights reserved.</p>
     </footer>
+
+    <script>
+async function loadYouTubeFeed() {
+  const url = "https://api.rss2json.com/v1/api.json?rss_url=https://www.youtube.com/feeds/videos.xml?channel_id=UCCAtvnaTk1qiE-uef8k4rCA";
+
+  const res = await fetch(url);
+  const data = await res.json();
+
+  const videosContainer = document.getElementById("videosPage");
+  videosContainer.innerHTML = "";
+
+  data.items.forEach(item => {
+    const videoId = item.guid.replace("yt:video:", "");
+
+    const iframe = document.createElement("iframe");
+    iframe.src = `https://www.youtube.com/embed/${videoId}`;
+    iframe.allowFullscreen = true;
+
+    videosContainer.appendChild(iframe);
+  });
+}
+
+loadYouTubeFeed();
+
+</script>
+
 
     <script src="nav.js" defer></script>
     <script type="module" src="main.js" defer></script>

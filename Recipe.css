@@ -8,21 +8,23 @@ body.darkMode main nav {
 }
 
 #videosPage {
-  flex-direction: column;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 20px;
+  padding: 10px;
+  width: 100%;
   height: auto;
-  width: auto;
 }
 
 #videosPage iframe {
   width: 100%;
-  height: 60vh;
-  object-fit: cover;
-  position: sticky;
-  top: 0;
-  margin: 20px 0;
+  aspect-ratio: 16 / 9;
   border-radius: 12px;
+  border: none;
+  object-fit: cover;
 }
+
+
 #popup.popuphide {
   display: none;
 }
