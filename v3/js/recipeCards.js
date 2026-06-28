@@ -5,6 +5,19 @@ let currentBatch = 1;
 let apiMealIndex = 0; // Tracks our position in the API meals array
 let cachedApiMeals = []; // Stores the API meals once fetched
 
+// 1. MUST BE DEFINED AT THE TOP SO FUNCTIONS CAN ACCESS IT
+const HARAM_KEYWORDS = [
+  "pork",
+  "bacon",
+  "ham",
+  "lard",
+  "alcohol",
+  "wine",
+  "beer",
+  "bourbon",
+  "rum",
+];
+
 // --- CREATE THE ONE AND ONLY CONTAINING GRID ---
 const mainRecipeGrid = document.createElement("div");
 mainRecipeGrid.classList.add("allRecipeDiv");
@@ -23,6 +36,18 @@ loadMoreBtn.innerHTML = `
 `;
 page.appendChild(loadMoreBtn);
 
+// 2. HELPER FUNCTION MOVED UP SO ITERATORS WORK NATIVELY
+function isHalalRecipe(recipe) {
+  const title = (recipe.title || "").toLowerCase();
+  const keywords = (recipe.dataKeywords || "").toLowerCase();
+
+  const containsHaram = HARAM_KEYWORDS.some(
+    (keyword) => title.includes(keyword) || keywords.includes(keyword),
+  );
+
+  return !containsHaram;
+}
+
 // --- UTILITY: RENDER CARDS DIRECTLY INTO THE MAIN CONTAINER ---
 function appendRecipesToGrid(recipes) {
   recipes.forEach((rec) => {
@@ -30,25 +55,35 @@ function appendRecipesToGrid(recipes) {
     const tagText = isExternal ? "TheMealDB" : "TryTasty Original";
     const tagClass = isExternal ? "tag-external" : "tag-original";
 
+    // Clean check for the premium utilities array we added
+    let utilitiesHTML = "";
+    if (rec.utilities && Array.isArray(rec.utilities)) {
+      utilitiesHTML = rec.utilities
+        .map((util) => `<span class="util-badge">${util}</span>`)
+        .join("");
+    }
+
     const cardHTML = `
       <a href="v3/recipe.html?id=${rec.id}" data-keywords="${rec.dataKeywords || ""}" class="snackImage recipe">
         <div class="recipe-tag ${tagClass}">${tagText}</div>
         <img loading="lazy" src="${rec.image}" title="Click to see details" alt="${rec.title}" />
+        <div class="recipe-utilities-container">
+          ${utilitiesHTML}
+        </div>
         <span class="recipe-title">${rec.title}</span>
       </a>
     `;
-    // Inject directly into the existing grid without wiping out previous items
     mainRecipeGrid.insertAdjacentHTML("beforeend", cardHTML);
   });
 }
 
 // --- UTILITY: GENERIC FAILURE DISPLAY ---
 function handlePageFailure() {
-  mainRecipeGrid.innerHTML = ""; // Clear grid if base structure completely breaks
+  mainRecipeGrid.innerHTML = "";
   if (loadMoreBtn) loadMoreBtn.remove();
 
   const failureDiv = document.createElement("div");
-  failureDiv.style.textalign = "center";
+  failureDiv.style.textAlign = "center";
   failureDiv.classList.add("failedToLoad");
   failureDiv.innerHTML = `
     <svg width="240" height="220" viewBox="0 0 240 220" xmlns="http://www.w3.org/2000/svg">
@@ -77,7 +112,7 @@ function handlePageFailure() {
   page.prepend(failureDiv);
 }
 
-// --- MASTER CONTROLLER: WHAT HAPPENS ON CLICK ---
+// --- MASTER CONTROLLER ---
 loadMoreBtn.addEventListener("click", () => {
   if (currentBatch === 1) {
     loadLocalBatch("v3/data/recipes/recipes2.json");
@@ -93,7 +128,9 @@ fetch("v3/data/recipes/recipes1.json")
     return r.json();
   })
   .then((data) => {
-    appendRecipesToGrid(data.recipes);
+    // Optional: Filter local ones too if you want to be safe
+    const safeOriginals = data.recipes.filter(isHalalRecipe);
+    appendRecipesToGrid(safeOriginals);
   })
   .catch((error) => {
     console.error("Initial load error:", error);
@@ -108,8 +145,9 @@ function loadLocalBatch(filePath) {
       return r.json();
     })
     .then((data) => {
-      appendRecipesToGrid(data.recipes);
-      currentBatch = 2; // Advance state to API mode for next clicks
+      const safeOriginals = data.recipes.filter(isHalalRecipe);
+      appendRecipesToGrid(safeOriginals);
+      currentBatch = 2;
     })
     .catch((error) => {
       console.error("Local batch error:", error);
@@ -119,9 +157,8 @@ function loadLocalBatch(filePath) {
 
 // --- CORE FETCH 3: STEPPED API LOOPS ---
 function loadNextExternalApiSet() {
-  const itemsPerLoad = 8; // How many API items to load per click
+  const itemsPerLoad = 8;
 
-  // If we haven't fetched the API list yet, fetch it once and cache it
   if (cachedApiMeals.length === 0) {
     fetch("https://www.themealdb.com/api/json/v1/1/filter.php?c=Side")
       .then((r) => {
@@ -138,17 +175,14 @@ function loadNextExternalApiSet() {
         handlePageFailure();
       });
   } else {
-    // If already cached, just render the next chunk
     renderCachedApiSegment(itemsPerLoad);
   }
 }
 
-// Helper to chunk out cached items so it doesn't overload the browser
 function renderCachedApiSegment(count) {
   const nextSegment = cachedApiMeals.slice(apiMealIndex, apiMealIndex + count);
 
   if (nextSegment.length === 0) {
-    // No more recipes left to pull from the API category
     loadMoreBtn.innerHTML = "<span>No More Snacks Available</span>";
     loadMoreBtn.disabled = true;
     return;
@@ -161,6 +195,9 @@ function renderCachedApiSegment(count) {
     dataKeywords: "external, mealdb, quick snack, side",
   }));
 
-  appendRecipesToGrid(normalized);
-  apiMealIndex += count; // Advance position tracker for the next click
+  // Runs perfectly now because the function is registered above this execution!
+  const safeHalalRecipes = normalized.filter(isHalalRecipe);
+
+  appendRecipesToGrid(safeHalalRecipes);
+  apiMealIndex += count;
 }

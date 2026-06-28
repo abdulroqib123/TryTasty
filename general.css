@@ -163,18 +163,6 @@ body {
   }
 }
 
-.beggingText {
-  font-size: 0.7rem;
-  animation: show 5s ease infinite;
-  opacity: 0;
-  animation-delay: 2s;
-}
-@keyframes show {
-  to {
-    opacity: 1;
-  }
-}
-
 /*HEADER STYLE*/
 header {
   display: flex;
