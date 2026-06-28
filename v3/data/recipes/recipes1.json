@@ -6,12 +6,10 @@
       "description": "⭐Savory French Toast Sticks made with bread, eggs, milk and grated cheese. Perfect for breakfast.",
       "image": "https://res.cloudinary.com/dc1bmavl5/image/upload/f_auto,q_auto/v1755416737/IMG_20250710_092333_1_glg6ik.avif",
       "dataKeywords": "eggs,egg,milk,bread",
-
       "prepTimeMin": 22,
       "cookTimeMin": 16,
       "coolTime": 0,
       "servings": 1,
-
       "ingredients": [
         "4 slices of bread",
         "2 eggs",
@@ -42,7 +40,6 @@
           { "item": "Black pepper", "quantity": "A pinch" },
           { "item": "Chili flakes", "quantity": "Light sprickle" }
         ],
-
         "equipment": [
           "Knife",
           "Mixing bowl",
@@ -50,7 +47,6 @@
           "Frying pan",
           "Spatula"
         ],
-
         "stepFlow": [
           {
             "step": "0",
@@ -84,12 +80,10 @@
             "estTimeMin": 0
           }
         ],
-
         "notes": {
           "userNotesEnabled": true,
           "defaultTip": "Use slightly stale bread for better texture."
         },
-
         "leftovers": {
           "storage": "Store in fridge in airtight container",
           "shelfLife": "1 day",
@@ -103,12 +97,10 @@
       "description": "⭐Sweet pan flatbreads made from flour, sugar, and water. Lightly browned, firm on the outside, and chewy inside. Simple, filling, and made with what you already have.",
       "image": "https://res.cloudinary.com/dc1bmavl5/image/upload/v1770579235/sweet-pan-bread_dxbqts.webp",
       "dataKeywords": "sugar,flour,water",
-
       "prepTimeMin": 10,
       "cookTimeMin": 10,
       "coolTime": 0,
       "servings": 1,
-
       "ingredients": [
         "1 cup flour",
         "2–3 tbsp sugar (adjust to taste)",
@@ -135,9 +127,7 @@
           { "item": "Sugar", "quantity": "2½ Cups" },
           { "item": "Water", "quantity": "½ Cup" }
         ],
-
         "equipment": ["Mixing bowl", "Measuring Cup", "Frying pan"],
-
         "stepFlow": [
           {
             "step": "0",
@@ -164,33 +154,23 @@
             "text": "Heat a dry pan on medium heat.",
             "estTimeMin": 2
           },
-          {
-            "step": 4,
-            "text": "Add cooking oil and heat.",
-            "estTimeMin": 2
-          },
+          { "step": 4, "text": "Add cooking oil and heat.", "estTimeMin": 2 },
           {
             "step": 5,
             "text": "Fry each panbread for about 2 minutes per side until lightly golden.",
             "estTimeMin": 10
           },
-          {
-            "step": 5,
-            "text": "Arrange on a plate.",
-            "estTimeMin": 2
-          },
+          { "step": 5, "text": "Arrange on a plate.", "estTimeMin": 2 },
           {
             "step": 6,
             "text": "Congratulations🎊, you have just completed this recipe.",
             "estTimeMin": 0
           }
         ],
-
         "notes": {
           "userNotesEnabled": true,
           "defaultTip": "Once kneaded, fry the dough within 4 minutes. Waiting longer can make it wet and harder to cook."
         },
-
         "leftovers": {
           "storage": "Store in fridge in airtight container",
           "shelfLife": "2 days",
@@ -204,12 +184,10 @@
       "description": "⭐Crispy plantain nachos made with ripe plantains, melted cheese, and fresh toppings. A perfect snack or party appetizer with a savory crunch.",
       "image": "https://res.cloudinary.com/dc1bmavl5/image/upload/v1755801683/ChatGPT-Image-May-3_-2025_-10_59_04-AM-_1__1_wqzd2y_11zon_xxu4kl.avif",
       "dataKeywords": "plantains,plantain,tomatoe",
-
       "prepTimeMin": 10,
       "cookTimeMin": 25,
       "coolTime": 0,
       "servings": 2,
-
       "ingredients": [
         "2 ripe plantains",
         "1 tbsp olive oil",
@@ -230,22 +208,83 @@
           "link": "plantain-cinnamon-rolls",
           "name": "Plantain Cinnamon Rolls"
         }
-      ]
+      ],
+      "utility": {
+        "mode": "cook",
+        "groceryList": [
+          { "item": "Ripe plantains", "quantity": "2" },
+          { "item": "Olive oil", "quantity": "1 tbsp" },
+          { "item": "Salt", "quantity": "A pinch" },
+          { "item": "Shredded cheese", "quantity": "A handful" },
+          { "item": "Tomatoes", "quantity": "1, diced" },
+          { "item": "Onion", "quantity": "½, diced" },
+          { "item": "Jalapeños", "quantity": "1–2, diced" },
+          { "item": "Sour cream or yogurt", "quantity": "2 tbsp" }
+        ],
+        "equipment": ["Knife", "Baking tray", "Oven", "Mixing bowl"],
+        "stepFlow": [
+          {
+            "step": "0",
+            "text": "Ready? Swipe left to begin.",
+            "estTimeMin": 25
+          },
+          {
+            "step": 1,
+            "text": "Preheat oven to 180°C (350°F).",
+            "estTimeMin": 5
+          },
+          {
+            "step": 2,
+            "text": "Slice plantains thinly and toss with olive oil and salt.",
+            "estTimeMin": 5
+          },
+          {
+            "step": 3,
+            "text": "Spread on a baking tray and bake for 20 minutes until crispy.",
+            "estTimeMin": 20
+          },
+          {
+            "step": 4,
+            "text": "Top with shredded cheese and diced toppings.",
+            "estTimeMin": 3
+          },
+          {
+            "step": 5,
+            "text": "Bake for 5 more minutes until cheese melts.",
+            "estTimeMin": 5
+          },
+          {
+            "step": 6,
+            "text": "Serve warm with sour cream or yogurt.",
+            "estTimeMin": 1
+          },
+          {
+            "step": 7,
+            "text": "Congratulations🎊, you have just completed this recipe.",
+            "estTimeMin": 0
+          }
+        ],
+        "notes": {
+          "userNotesEnabled": true,
+          "defaultTip": "Use very ripe plantains for a naturally sweeter, crispier chip."
+        },
+        "leftovers": {
+          "storage": "Store in fridge in airtight container",
+          "shelfLife": "1 day",
+          "reheat": "Bake at 180°C for 5 minutes to re-crisp"
+        }
+      }
     },
-
     {
       "id": "peanut-butter-apple-nachos",
       "title": "Peanut Butter Apple Nachos",
-      "description": "⭐Crisp, sweet, and drizzled with creamy peanut butter. These Peanut Butter Apple Nachos are the perfect quick snack when you want something fresh but still a little indulgent. Thin apple slices are topped with peanut butter, chocolate drizzle, and a sprinkle of granola for a fun, no‑bake treat that’s ready in minutes. Great for after‑school snacking, light desserts, or a healthier twist on classic nachos.",
+      "description": "⭐Crisp, sweet, and drizzled with creamy peanut butter. These Peanut Butter Apple Nachos are the perfect quick snack when you want something fresh but still a little indulgent. Thin apple slices are topped with peanut butter, chocolate drizzle, and a sprinkle of granola for a fun, no‑bake treat that's ready in minutes. Great for after‑school snacking, light desserts, or a healthier twist on classic nachos.",
       "image": "https://res.cloudinary.com/dc1bmavl5/image/upload/f_auto,q_auto/v1755417445/IMG_20250806_150806_svoeqb_th0ev7.avif",
       "dataKeywords": "pear,peanut butter,peanutbutter,apple",
-
       "prepTimeMin": 8,
       "cookTimeMin": 0,
       "coolTime": 0,
-
       "servings": 1,
-
       "ingredients": [
         "1 Apple",
         "1 tbsp peanut butter",
@@ -263,21 +302,78 @@
           "link": "spicy-peanut-butter-popcorn",
           "name": "Spicy Peanut Butter Popcorn"
         }
-      ]
+      ],
+      "utility": {
+        "mode": "cook",
+        "groceryList": [
+          { "item": "Apple", "quantity": "1" },
+          { "item": "Peanut butter", "quantity": "1 tbsp" },
+          { "item": "Granola or crushed nuts", "quantity": "A sprinkle" },
+          {
+            "item": "Chocolate drizzle",
+            "quantity": "A drizzle",
+            "optional": true
+          }
+        ],
+        "equipment": ["Knife", "Plate", "Small bowl or microwave-safe cup"],
+        "stepFlow": [
+          {
+            "step": "0",
+            "text": "Ready? Swipe left to begin.",
+            "estTimeMin": 8
+          },
+          {
+            "step": 1,
+            "text": "Wash and cut apple into thin slices.",
+            "estTimeMin": 3
+          },
+          {
+            "step": 2,
+            "text": "Layer apple slices on a plate.",
+            "estTimeMin": 1
+          },
+          {
+            "step": 3,
+            "text": "Melt peanut butter in microwave for 20 seconds.",
+            "estTimeMin": 1
+          },
+          {
+            "step": 4,
+            "text": "Drizzle melted peanut butter over the apple slices.",
+            "estTimeMin": 1
+          },
+          {
+            "step": 5,
+            "text": "Add chocolate drizzle and sprinkle granola or crushed nuts.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 6,
+            "text": "Congratulations🎊, you have just completed this recipe.",
+            "estTimeMin": 0
+          }
+        ],
+        "notes": {
+          "userNotesEnabled": true,
+          "defaultTip": "Use a tart apple like Granny Smith to balance the sweetness of the peanut butter."
+        },
+        "leftovers": {
+          "storage": "Best eaten fresh — apples brown quickly once sliced",
+          "shelfLife": "Same day",
+          "reheat": "No reheating needed"
+        }
+      }
     },
-
     {
       "id": "spicy-peanut-butter-popcorn",
       "title": "Spicy Peanut Butter Popcorn",
       "description": "⭐Spicy Peanut Butter Popcorn made with popcorn, peanut butter and honey. Perfect for movie nights and small snacks.",
       "image": "https://res.cloudinary.com/dc1bmavl5/image/upload/f_auto,q_auto/v1755416751/Spicy-Peanut-Butter-Popcorn-Delights-_1__1_svy6og.avif",
       "dataKeywords": "chili,peanut butter,popcorn",
-
       "prepTimeMin": 4,
       "cookTimeMin": 10,
       "coolTime": 0,
       "servings": 3,
-
       "ingredients": [
         "6 cups popcorn",
         "3 tbsp peanut butter",
@@ -295,20 +391,83 @@
           "link": "peanut-butter-apple-nachos",
           "name": "Peanut Butter Apple Nachos"
         }
-      ]
+      ],
+      "utility": {
+        "mode": "cook",
+        "groceryList": [
+          { "item": "Popcorn", "quantity": "6 cups (popped)" },
+          { "item": "Peanut butter", "quantity": "3 tbsp" },
+          { "item": "Honey", "quantity": "1 tbsp" },
+          { "item": "Chili powder", "quantity": "½ tsp" },
+          { "item": "Salt", "quantity": "A pinch" }
+        ],
+        "equipment": [
+          "Small pot",
+          "Large mixing bowl",
+          "Spatula or wooden spoon"
+        ],
+        "stepFlow": [
+          {
+            "step": "0",
+            "text": "Ready? Swipe left to begin.",
+            "estTimeMin": 14
+          },
+          {
+            "step": 1,
+            "text": "Pop your popcorn and set aside in a large bowl.",
+            "estTimeMin": 5
+          },
+          {
+            "step": 2,
+            "text": "Add peanut butter, honey, and chili powder to a small pot.",
+            "estTimeMin": 1
+          },
+          {
+            "step": 3,
+            "text": "Melt on low heat, stirring until smooth.",
+            "estTimeMin": 3
+          },
+          {
+            "step": 4,
+            "text": "Pour the mixture over the popcorn and mix evenly.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 5,
+            "text": "Add a pinch of salt and toss once more.",
+            "estTimeMin": 1
+          },
+          {
+            "step": 6,
+            "text": "Let cool for 2 minutes before serving.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 7,
+            "text": "Congratulations🎊, you have just completed this recipe.",
+            "estTimeMin": 0
+          }
+        ],
+        "notes": {
+          "userNotesEnabled": true,
+          "defaultTip": "Work quickly when mixing — the coating sets fast as it cools."
+        },
+        "leftovers": {
+          "storage": "Store in an airtight bag or container at room temperature",
+          "shelfLife": "1 day",
+          "reheat": "No reheating needed"
+        }
+      }
     },
-
     {
       "id": "instant-ramen-tacos",
       "title": "Instant Ramen Taco",
       "description": "⭐Instant Ramen Taco made with instant noodles, egg, lettuce and shredded cheese. Perfect for breakfast and tasty snacks.",
       "image": "https://res.cloudinary.com/dc1bmavl5/image/upload/v1767979068/instant-ramen-tacos_m6u3qq.webp",
       "dataKeywords": "egg,eggs,noodles,Lettuce,chicken",
-
       "prepTimeMin": 6,
       "cookTimeMin": 15,
       "coolTime": 0,
-
       "servings": 1,
       "ingredients": [
         "1 pack of instant noodles",
@@ -327,20 +486,86 @@
           "link": "cheesy-ramen-nest",
           "name": "Cheesy Ramen Nest"
         }
-      ]
+      ],
+      "utility": {
+        "mode": "cook",
+        "groceryList": [
+          { "item": "Instant noodles", "quantity": "1 pack" },
+          { "item": "Egg", "quantity": "1" },
+          { "item": "Oil", "quantity": "For frying" },
+          { "item": "Lettuce", "quantity": "A few leaves" },
+          { "item": "Shredded chicken", "quantity": "A handful" },
+          { "item": "Spicy mayo", "quantity": "1–2 tbsp" }
+        ],
+        "equipment": [
+          "Pot",
+          "Mixing bowl",
+          "Foil (for molds)",
+          "Frying pan",
+          "Tongs or spatula"
+        ],
+        "stepFlow": [
+          {
+            "step": "0",
+            "text": "Ready? Swipe left to begin.",
+            "estTimeMin": 21
+          },
+          {
+            "step": 1,
+            "text": "Boil noodles for 2 minutes — slightly undercooked.",
+            "estTimeMin": 3
+          },
+          {
+            "step": 2,
+            "text": "Drain and mix noodles with 1 beaten egg.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 3,
+            "text": "Shape noodle mix into taco shells using foil molds.",
+            "estTimeMin": 4
+          },
+          {
+            "step": 4,
+            "text": "Heat oil in a frying pan on medium heat.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 5,
+            "text": "Fry shells until crispy and golden on both sides.",
+            "estTimeMin": 8
+          },
+          {
+            "step": 6,
+            "text": "Fill shells with lettuce, shredded chicken, and spicy mayo.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 7,
+            "text": "Congratulations🎊, you have just completed this recipe.",
+            "estTimeMin": 0
+          }
+        ],
+        "notes": {
+          "userNotesEnabled": true,
+          "defaultTip": "Don't fully cook the noodles — they need to be slightly firm to hold their shape when fried."
+        },
+        "leftovers": {
+          "storage": "Store shells and filling separately in the fridge",
+          "shelfLife": "1 day",
+          "reheat": "Re-fry shells for 2 minutes to restore crispiness"
+        }
+      }
     },
-
     {
       "id": "spicy-corn-and-coconut-bites",
       "title": "Spicy Corn & Coconut Bites",
       "description": "⭐Spicy Corn & Coconut Bites made with Sweet corn, Grated coconut, Lime juice and Chili flakes. Perfect for instant and tasty snacks.",
       "image": "https://res.cloudinary.com/dc1bmavl5/image/upload/f_auto,q_auto/v1755416737/Spicy_Corn_and_Coconut_Bites_1_ql2cvh.avif",
       "dataKeywords": "corn,coconut,chili",
-
       "prepTimeMin": 10,
       "cookTimeMin": 10,
       "coolTime": 0,
-
       "servings": 2,
       "ingredients": [
         "Sweet corn",
@@ -359,20 +584,69 @@
           "link": "banana-oat-energy-bites",
           "name": "Banana Oat Energy Bites"
         }
-      ]
+      ],
+      "utility": {
+        "mode": "cook",
+        "groceryList": [
+          { "item": "Sweet corn", "quantity": "1 cup" },
+          { "item": "Grated coconut", "quantity": "½ cup" },
+          { "item": "Chili flakes", "quantity": "½ tsp" },
+          { "item": "Lime", "quantity": "1, juiced" },
+          { "item": "Salt", "quantity": "A pinch" }
+        ],
+        "equipment": ["Mixing bowl", "Spoon or spatula", "Refrigerator"],
+        "stepFlow": [
+          {
+            "step": "0",
+            "text": "Ready? Swipe left to begin.",
+            "estTimeMin": 20
+          },
+          {
+            "step": 1,
+            "text": "Add corn, grated coconut, chili flakes, and salt to a bowl.",
+            "estTimeMin": 3
+          },
+          {
+            "step": 2,
+            "text": "Squeeze lime juice over the mixture and stir well.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 3,
+            "text": "Roll the mixture into small balls.",
+            "estTimeMin": 5
+          },
+          {
+            "step": 4,
+            "text": "Place on a plate and chill in the fridge for 10 minutes.",
+            "estTimeMin": 10
+          },
+          {
+            "step": 5,
+            "text": "Congratulations🎊, you have just completed this recipe.",
+            "estTimeMin": 0
+          }
+        ],
+        "notes": {
+          "userNotesEnabled": true,
+          "defaultTip": "If the mixture is too loose to roll, add a little more grated coconut to bind it."
+        },
+        "leftovers": {
+          "storage": "Store in fridge in airtight container",
+          "shelfLife": "2 days",
+          "reheat": "No reheating needed — serve cold"
+        }
+      }
     },
-
     {
       "id": "plantain-cinnamon-rolls",
       "title": "Plantain Cinnamon Rolls",
       "description": "⭐Plantain Cinnamon Rolls made with ripe plantain, ground cinnamon and butter. Perfect for appetizers.",
       "image": "https://res.cloudinary.com/dc1bmavl5/image/upload/f_auto,q_auto/v1755416738/Plantain_Cinnamon_Rolls_on_Ceramic_Plate_1_lb4rgi.avif",
       "dataKeywords": "plantains,plantain,cinnamon",
-
       "prepTimeMin": 13,
       "cookTimeMin": 3,
       "coolTime": 0,
-
       "servings": 2,
       "ingredients": [
         "2 ripe plantains",
@@ -393,20 +667,83 @@
           "link": "plantain-egg-cups",
           "name": "Plantain Egg Cups"
         }
-      ]
+      ],
+      "utility": {
+        "mode": "cook",
+        "groceryList": [
+          { "item": "Ripe plantains", "quantity": "2" },
+          { "item": "Ground cinnamon", "quantity": "1 tsp" },
+          { "item": "Butter or margarine", "quantity": "2 tsp" },
+          { "item": "Sugar or honey", "quantity": "1 tsp" },
+          {
+            "item": "Toothpicks or skewers",
+            "quantity": "A few",
+            "optional": true
+          }
+        ],
+        "equipment": ["Knife", "Frying pan", "Small bowl", "Spatula"],
+        "stepFlow": [
+          {
+            "step": "0",
+            "text": "Ready? Swipe left to begin.",
+            "estTimeMin": 16
+          },
+          {
+            "step": 1,
+            "text": "Peel plantains and slice lengthwise into thin flat strips.",
+            "estTimeMin": 4
+          },
+          {
+            "step": 2,
+            "text": "Fry strips in butter for 3 minutes until soft and flexible.",
+            "estTimeMin": 3
+          },
+          {
+            "step": 3,
+            "text": "Mix sugar or honey with cinnamon in a small bowl.",
+            "estTimeMin": 1
+          },
+          {
+            "step": 4,
+            "text": "Spread the cinnamon mix over each warm plantain strip.",
+            "estTimeMin": 3
+          },
+          {
+            "step": 5,
+            "text": "Gently roll each strip and secure with a toothpick if needed.",
+            "estTimeMin": 4
+          },
+          {
+            "step": 6,
+            "text": "Let cool slightly and serve warm.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 7,
+            "text": "Congratulations🎊, you have just completed this recipe.",
+            "estTimeMin": 0
+          }
+        ],
+        "notes": {
+          "userNotesEnabled": true,
+          "defaultTip": "Make sure the plantain is very ripe (mostly black peel) — it's sweeter and more flexible for rolling."
+        },
+        "leftovers": {
+          "storage": "Store in fridge in airtight container",
+          "shelfLife": "1 day",
+          "reheat": "Pan-fry for 1–2 minutes"
+        }
+      }
     },
-
     {
       "id": "plantain-egg-cups",
       "title": "Plantain Egg Cups",
       "description": "⭐Plantain Egg Cups made with ripe plantain, egg and salt. Perfect for breakfast.",
       "image": "https://res.cloudinary.com/dc1bmavl5/image/upload/f_auto,q_auto/v1755416739/Plantain_Egg_Cups_1_jo9uqx.avif",
       "dataKeywords": "plantains,plantain,egg",
-
       "prepTimeMin": 18,
       "cookTimeMin": 15,
       "coolTime": 0,
-
       "servings": 3,
       "ingredients": [
         "2 ripe plantains",
@@ -429,7 +766,84 @@
           "link": "plantain-nachos",
           "name": "Plantain Nachos"
         }
-      ]
+      ],
+      "utility": {
+        "mode": "cook",
+        "groceryList": [
+          { "item": "Ripe plantains", "quantity": "2" },
+          { "item": "Eggs", "quantity": "2" },
+          { "item": "Salt", "quantity": "A pinch" },
+          { "item": "Black pepper", "quantity": "A pinch" },
+          { "item": "Oil", "quantity": "For greasing" }
+        ],
+        "equipment": [
+          "Knife",
+          "Muffin tin",
+          "Oven",
+          "Spoon or brush (for greasing)"
+        ],
+        "stepFlow": [
+          {
+            "step": "0",
+            "text": "Ready? Swipe left to begin.",
+            "estTimeMin": 33
+          },
+          {
+            "step": 1,
+            "text": "Preheat oven to 180°C (350°F) for 10 minutes.",
+            "estTimeMin": 10
+          },
+          {
+            "step": 2,
+            "text": "Slice plantains into thin rounds.",
+            "estTimeMin": 3
+          },
+          {
+            "step": 3,
+            "text": "Grease muffin cups with oil.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 4,
+            "text": "Press plantain slices into the base of each muffin cup.",
+            "estTimeMin": 3
+          },
+          {
+            "step": 5,
+            "text": "Crack one egg into each muffin cup.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 6,
+            "text": "Sprinkle salt and pepper over each cup.",
+            "estTimeMin": 1
+          },
+          {
+            "step": 7,
+            "text": "Bake for 12–15 minutes until eggs are set.",
+            "estTimeMin": 15
+          },
+          {
+            "step": 8,
+            "text": "Cool slightly and remove from tin.",
+            "estTimeMin": 3
+          },
+          {
+            "step": 9,
+            "text": "Congratulations🎊, you have just completed this recipe.",
+            "estTimeMin": 0
+          }
+        ],
+        "notes": {
+          "userNotesEnabled": true,
+          "defaultTip": "For runny yolks, bake for 12 minutes. For fully set eggs, go the full 15."
+        },
+        "leftovers": {
+          "storage": "Store in fridge in airtight container",
+          "shelfLife": "1 day",
+          "reheat": "Microwave for 30–45 seconds or oven at 160°C for 5 minutes"
+        }
+      }
     }
   ]
 }

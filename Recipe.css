@@ -142,7 +142,43 @@ h3 {
   margin-top: 10px;
   color: #ff4500;
 }
+.recipe-title {
+  font-size: 1rem;
+}
+/* Card container position reset */
+.snackImage.recipe {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 12px;
+}
 
+/* Base tag architecture */
+.recipe-tag {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 6px;
+  z-index: 2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* TryTasty Original Visual Style */
+.tag-original {
+  background-color: #ffc861;
+  color: #121212;
+}
+
+/* External API Visual Style */
+.tag-external {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
 /* Responsive Design */
 @media (max-width: 600px) {
   .snackImage {

@@ -6,11 +6,9 @@
       "description": "⭐ Nutty Date Energy Rocks are perfect for a quick, natural energy boost before workouts or during busy days. They also make a healthy, guilt-free snack that satisfies sweet cravings without refined sugar.",
       "image": "https://res.cloudinary.com/dc1bmavl5/image/upload/f_auto,q_auto/v1755416738/Energie_Steine_aus_Datteln_und_N%C3%BCssen_1_lqm8ah.avif",
       "dataKeywords": "date,oat,honey",
-
       "prepTimeMin": 13,
       "cookTimeMin": 0,
       "coolTime": 12,
-
       "servings": 1,
       "ingredients": [
         "Pitted date",
@@ -29,20 +27,73 @@
           "link": "banana-oat-energy-bites",
           "name": "Banana Oat Energy Bites"
         }
-      ]
+      ],
+      "utility": {
+        "mode": "cook",
+        "groceryList": [
+          { "item": "Pitted dates", "quantity": "6–8" },
+          { "item": "Roasted peanuts", "quantity": "¼ cup" },
+          { "item": "Rolled oats", "quantity": "¼ cup" },
+          { "item": "Honey", "quantity": "1 tsp" },
+          { "item": "Cocoa powder", "quantity": "1 tsp" }
+        ],
+        "equipment": [
+          "Blender or food processor",
+          "Mixing bowl",
+          "Refrigerator"
+        ],
+        "stepFlow": [
+          {
+            "step": "0",
+            "text": "Ready? Swipe left to begin.",
+            "estTimeMin": 25
+          },
+          {
+            "step": 1,
+            "text": "Add dates, peanuts, oats, honey, and cocoa to a blender.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 2,
+            "text": "Blend until a sticky dough forms.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 3,
+            "text": "Scoop and roll into small rock-shaped balls.",
+            "estTimeMin": 5
+          },
+          {
+            "step": 4,
+            "text": "Place on a plate and chill for 12 minutes.",
+            "estTimeMin": 12
+          },
+          {
+            "step": 5,
+            "text": "Congratulations🎊, you have just completed this recipe.",
+            "estTimeMin": 0
+          }
+        ],
+        "notes": {
+          "userNotesEnabled": true,
+          "defaultTip": "If the dough is too dry to roll, add one more date or a tiny splash of water."
+        },
+        "leftovers": {
+          "storage": "Store in fridge in airtight container",
+          "shelfLife": "5 days",
+          "reheat": "No reheating needed — serve cold or at room temperature"
+        }
+      }
     },
-
     {
       "id": "sweet-potato-bites-with-yougurt-dip",
       "title": "sweet Potato Bites With Yogurt Dip",
       "description": "⭐This is a very tasty snack. It can be taken as appetizer or just a quick snack.",
       "image": "https://res.cloudinary.com/dc1bmavl5/image/upload/f_auto,q_auto/v1755416750/ChatGPT-Image-May-3_-2025_-09_25_52-PM-_1__teaw4q.avif",
       "dataKeywords": "yogurt,cinamon,paprika,potatoes,Potato",
-
       "prepTimeMin": 12,
       "cookTimeMin": 20,
       "coolTime": 0,
-
       "servings": 2,
       "ingredients": [
         "2 medium sweet potatoes",
@@ -62,20 +113,87 @@
           "link": "crispy-chickpea-snack",
           "name": "Crispy Chickpea Snacks"
         }
-      ]
+      ],
+      "utility": {
+        "mode": "cook",
+        "groceryList": [
+          { "item": "Sweet potatoes", "quantity": "2 medium" },
+          { "item": "Cooking oil", "quantity": "1 tbsp" },
+          { "item": "Cinnamon", "quantity": "½ tsp" },
+          { "item": "Paprika", "quantity": "½ tsp" },
+          { "item": "Salt", "quantity": "A pinch" },
+          { "item": "Greek yogurt", "quantity": "½ cup" },
+          { "item": "Lemon", "quantity": "1, juiced" }
+        ],
+        "equipment": [
+          "Knife",
+          "Mixing bowl",
+          "Baking tray",
+          "Oven",
+          "Small bowl (for dip)"
+        ],
+        "stepFlow": [
+          {
+            "step": "0",
+            "text": "Ready? Swipe left to begin.",
+            "estTimeMin": 32
+          },
+          {
+            "step": 1,
+            "text": "Preheat oven to 180°C (356°F).",
+            "estTimeMin": 5
+          },
+          {
+            "step": 2,
+            "text": "Peel and cut sweet potatoes into small cubes.",
+            "estTimeMin": 5
+          },
+          {
+            "step": 3,
+            "text": "Toss cubes with oil, cinnamon, paprika, and salt.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 4,
+            "text": "Spread on a baking tray and bake for 20 minutes.",
+            "estTimeMin": 20
+          },
+          {
+            "step": 5,
+            "text": "Mix yogurt with a splash of lemon juice in a small bowl.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 6,
+            "text": "Serve baked bites warm with yogurt dip on the side.",
+            "estTimeMin": 1
+          },
+          {
+            "step": 7,
+            "text": "Congratulations🎊, you have just completed this recipe.",
+            "estTimeMin": 0
+          }
+        ],
+        "notes": {
+          "userNotesEnabled": true,
+          "defaultTip": "Cut the cubes evenly so they bake at the same rate — about 2cm each works well."
+        },
+        "leftovers": {
+          "storage": "Store bites and dip separately in fridge",
+          "shelfLife": "2 days",
+          "reheat": "Bake at 180°C for 5 minutes to re-crisp"
+        }
+      }
     },
-
     {
       "id": "cheesy-ramen-nest",
       "title": "Cheesy Ramen Nests",
       "description": "⭐Cheesy ramen nest is a perfect dish for breakfast or lunch with its sponge-like texture and flavour-rich taste. ",
       "image": "https://res.cloudinary.com/dc1bmavl5/image/upload/v1767979068/cheesy-ramen-nest_tgu09z.webp",
       "dataKeywords": "egg,eggs,noodles,cheese",
-
       "prepTimeMin": 3,
       "cookTimeMin": 12,
       "coolTime": 0,
-
       "servings": 2,
       "ingredients": [
         "1 packet instant noodles",
@@ -93,20 +211,75 @@
           "link": "instant-ramen-tacos",
           "name": "Instant Ramen Taco"
         }
-      ]
+      ],
+      "utility": {
+        "mode": "cook",
+        "groceryList": [
+          { "item": "Instant noodles", "quantity": "1 packet" },
+          { "item": "Egg", "quantity": "1" },
+          { "item": "Grated cheese", "quantity": "¼ cup" },
+          { "item": "Black pepper", "quantity": "A pinch" }
+        ],
+        "equipment": ["Pot", "Sieve", "Mixing bowl", "Muffin tin", "Oven"],
+        "stepFlow": [
+          {
+            "step": "0",
+            "text": "Ready? Swipe left to begin.",
+            "estTimeMin": 19
+          },
+          { "step": 1, "text": "Preheat oven to 180°C.", "estTimeMin": 5 },
+          {
+            "step": 2,
+            "text": "Boil noodles without seasoning for 2 minutes.",
+            "estTimeMin": 3
+          },
+          { "step": 3, "text": "Drain noodles with a sieve.", "estTimeMin": 1 },
+          {
+            "step": 4,
+            "text": "Mix drained noodles with egg, grated cheese, and black pepper.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 5,
+            "text": "Spoon mixture into muffin tin cups.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 6,
+            "text": "Bake for 14 minutes until golden.",
+            "estTimeMin": 14
+          },
+          {
+            "step": 7,
+            "text": "Let cool slightly and remove from tin.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 8,
+            "text": "Congratulations🎊, you have just completed this recipe.",
+            "estTimeMin": 0
+          }
+        ],
+        "notes": {
+          "userNotesEnabled": true,
+          "defaultTip": "Grease the muffin tin well before filling — this makes the nests pop out cleanly after baking."
+        },
+        "leftovers": {
+          "storage": "Store in fridge in airtight container",
+          "shelfLife": "1 day",
+          "reheat": "Oven at 160°C for 5 minutes or microwave for 30 seconds"
+        }
+      }
     },
-
     {
       "id": "banana-oat-energy-bites",
       "title": "Banana Oat Energy Bites",
-      "description": "⭐Banana oat energy bites are quick no-bake snacks made from mashed bananas and oats that deliver steady energy. They’re perfect for school, workouts, or busy days when you need something healthy and satisfying.",
+      "description": "⭐Banana oat energy bites are quick no-bake snacks made from mashed bananas and oats that deliver steady energy. They're perfect for school, workouts, or busy days when you need something healthy and satisfying.",
       "image": "https://res.cloudinary.com/dc1bmavl5/image/upload/f_auto,q_auto/v1755416739/ChatGPT-Image-May-3_-2025_-09_33_00-PM-_1__j7giel.avif",
       "dataKeywords": "chocolate,butter,banana,oats,oat",
-
       "prepTimeMin": 6,
       "cookTimeMin": 0,
       "coolTime": 0,
-
       "servings": 1,
       "ingredients": [
         "1 ripe banana",
@@ -124,22 +297,74 @@
           "link": "cheesy-mango-poppers",
           "name": "Cheesy Mango Poppers"
         }
-      ]
+      ],
+      "utility": {
+        "mode": "cook",
+        "groceryList": [
+          { "item": "Ripe banana", "quantity": "1" },
+          { "item": "Rolled oats", "quantity": "½ cup" },
+          { "item": "Peanut butter", "quantity": "1 tbsp" },
+          { "item": "Chocolate chips or raisins", "quantity": "1 tbsp" }
+        ],
+        "equipment": ["Fork", "Mixing bowl", "Refrigerator"],
+        "stepFlow": [
+          {
+            "step": "0",
+            "text": "Ready? Swipe left to begin.",
+            "estTimeMin": 36
+          },
+          {
+            "step": 1,
+            "text": "Mash the banana in a bowl with a fork.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 2,
+            "text": "Add oats, peanut butter, and chocolate chips or raisins.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 3,
+            "text": "Mix everything together until combined.",
+            "estTimeMin": 1
+          },
+          {
+            "step": 4,
+            "text": "Roll mixture into small balls.",
+            "estTimeMin": 4
+          },
+          {
+            "step": 5,
+            "text": "Place on a plate and chill in fridge for 30 minutes.",
+            "estTimeMin": 30
+          },
+          {
+            "step": 6,
+            "text": "Congratulations🎊, you have just completed this recipe.",
+            "estTimeMin": 0
+          }
+        ],
+        "notes": {
+          "userNotesEnabled": true,
+          "defaultTip": "The riper the banana, the sweeter and stickier the mix — overripe bananas work best."
+        },
+        "leftovers": {
+          "storage": "Store in fridge in airtight container",
+          "shelfLife": "3 days",
+          "reheat": "No reheating needed — serve cold"
+        }
+      }
     },
-
     {
       "id": "zesty-cucumber-chips",
       "title": "Zesty Cucumber Chips",
-      "description": "⭐Light, crunchy, and bursting with fresh flavor. These Zesty Cucumber Chips turn simple cucumber slices into a refreshing snack with a tangy kick. Seasoned with chili, lemon, and a touch of salt, they deliver the perfect balance of cool and spicy. Ideal for hot days, quick snacking, or adding a bright side to any meal, they’re ready in minutes and feel as clean as they taste.",
+      "description": "⭐Light, crunchy, and bursting with fresh flavor. These Zesty Cucumber Chips turn simple cucumber slices into a refreshing snack with a tangy kick. Seasoned with chili, lemon, and a touch of salt, they deliver the perfect balance of cool and spicy. Ideal for hot days, quick snacking, or adding a bright side to any meal, they're ready in minutes and feel as clean as they taste.",
       "image": "https://res.cloudinary.com/dc1bmavl5/image/upload/f_auto,q_auto/v1755416739/ChatGPT-Image-May-3_-2025_-09_34_44-PM-_1__v8iram.avif",
       "dataKeywords": "paprika,cucumber",
-
       "prepTimeMin": 6,
       "cookTimeMin": 30,
       "coolTime": 0,
-
       "servings": 2,
-
       "ingredients": [
         "1 large cucumber",
         "Lemon juice",
@@ -156,22 +381,79 @@
           "link": "garri-cookies",
           "name": "Garri Cookies"
         }
-      ]
+      ],
+      "utility": {
+        "mode": "cook",
+        "groceryList": [
+          { "item": "Large cucumber", "quantity": "1" },
+          { "item": "Lemon", "quantity": "1, juiced" },
+          { "item": "Paprika powder", "quantity": "½ tsp" },
+          { "item": "Salt", "quantity": "A pinch" }
+        ],
+        "equipment": ["Knife", "Baking sheet", "Oven"],
+        "stepFlow": [
+          {
+            "step": "0",
+            "text": "Ready? Swipe left to begin.",
+            "estTimeMin": 36
+          },
+          {
+            "step": 1,
+            "text": "Preheat oven to 120°C (250°F).",
+            "estTimeMin": 5
+          },
+          {
+            "step": 2,
+            "text": "Slice cucumber as thinly as possible.",
+            "estTimeMin": 4
+          },
+          {
+            "step": 3,
+            "text": "Lay slices flat on a baking sheet.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 4,
+            "text": "Drizzle with lemon juice and sprinkle paprika and salt.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 5,
+            "text": "Bake for 30 minutes until crisp.",
+            "estTimeMin": 30
+          },
+          {
+            "step": 6,
+            "text": "Let cool for a few minutes — they crisp up more as they cool.",
+            "estTimeMin": 3
+          },
+          {
+            "step": 7,
+            "text": "Congratulations🎊, you have just completed this recipe.",
+            "estTimeMin": 0
+          }
+        ],
+        "notes": {
+          "userNotesEnabled": true,
+          "defaultTip": "Slice as thin as you can — a mandoline works great if you have one. Thicker slices won't crisp properly."
+        },
+        "leftovers": {
+          "storage": "Store in an airtight container at room temperature",
+          "shelfLife": "1 day",
+          "reheat": "No reheating needed"
+        }
+      }
     },
-
     {
       "id": "frozen-banana-s´more-bites",
       "title": "Frozen Banana S`more Bites",
-      "description": "⭐Cold, creamy, and chocolatey with a playful campfire twist. These Frozen Banana S’more Bites turn simple ingredients into a refreshing treat you’ll want to keep in your freezer all summer. Sweet banana slices are sandwiched with marshmallow fluff, dipped in melted chocolate, and finished with a crunchy graham topping. They’re easy to make, fun to eat, and perfect for snacking, parties, or satisfying a sweet craving without feeling heavy.",
+      "description": "⭐Cold, creamy, and chocolatey with a playful campfire twist. These Frozen Banana S'more Bites turn simple ingredients into a refreshing treat you'll want to keep in your freezer all summer. Sweet banana slices are sandwiched with marshmallow fluff, dipped in melted chocolate, and finished with a crunchy graham topping. They're easy to make, fun to eat, and perfect for snacking, parties, or satisfying a sweet craving without feeling heavy.",
       "image": "https://res.cloudinary.com/dc1bmavl5/image/upload/f_auto,q_auto/v1755416738/ChatGPT_Image_May_16_2025_03_44_16_PM_1_kgvh5w.avif",
       "dataKeywords": "banana, chocolate, marshmellows",
-
       "prepTimeMin": 12,
       "cookTimeMin": 0,
       "coolTime": 30,
-
       "servings": 2,
-
       "ingredients": [
         "2 bananas",
         "Melted dark chocolate",
@@ -189,22 +471,84 @@
           "link": "spicy-corn-and-coconut-bites",
           "name": "Spicy Corn & Coconut Bites"
         }
-      ]
+      ],
+      "utility": {
+        "mode": "cook",
+        "groceryList": [
+          { "item": "Bananas", "quantity": "2" },
+          { "item": "Dark chocolate", "quantity": "½ cup, melted" },
+          { "item": "Graham crackers", "quantity": "3–4, crushed" },
+          { "item": "Mini marshmallows", "quantity": "A handful" }
+        ],
+        "equipment": [
+          "Knife",
+          "Small bowl (for melted chocolate)",
+          "Plate or tray",
+          "Freezer"
+        ],
+        "stepFlow": [
+          {
+            "step": "0",
+            "text": "Ready? Swipe left to begin.",
+            "estTimeMin": 42
+          },
+          {
+            "step": 1,
+            "text": "Cut bananas into thick round slices.",
+            "estTimeMin": 3
+          },
+          {
+            "step": 2,
+            "text": "Melt dark chocolate in a bowl.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 3,
+            "text": "Dip each banana slice into the melted chocolate.",
+            "estTimeMin": 4
+          },
+          {
+            "step": 4,
+            "text": "Press into crushed graham cracker crumbs.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 5,
+            "text": "Top each slice with a mini marshmallow.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 6,
+            "text": "Place on a tray and freeze for 30 minutes.",
+            "estTimeMin": 30
+          },
+          {
+            "step": 7,
+            "text": "Congratulations🎊, you have just completed this recipe.",
+            "estTimeMin": 0
+          }
+        ],
+        "notes": {
+          "userNotesEnabled": true,
+          "defaultTip": "Use slightly underripe bananas — they hold their shape better after freezing."
+        },
+        "leftovers": {
+          "storage": "Store in freezer in airtight container",
+          "shelfLife": "3 days",
+          "reheat": "No reheating needed — serve straight from freezer"
+        }
+      }
     },
-
     {
       "id": "avocado-egg-toast-cups",
       "title": "Avocado Egg Toast Cups",
-      "description": "⭐Crispy, creamy, and protein‑packed. These Avocado Egg Toast Cups turn simple ingredients into a warm, satisfying breakfast you can hold in your hand. Toasted bread forms a golden cup that bakes around a soft egg, then gets topped with smooth mashed avocado and a sprinkle of chili flakes. They’re quick, wholesome, and perfect for busy mornings or a cozy weekend brunch.",
+      "description": "⭐Crispy, creamy, and protein‑packed. These Avocado Egg Toast Cups turn simple ingredients into a warm, satisfying breakfast you can hold in your hand. Toasted bread forms a golden cup that bakes around a soft egg, then gets topped with smooth mashed avocado and a sprinkle of chili flakes. They're quick, wholesome, and perfect for busy mornings or a cozy weekend brunch.",
       "image": "https://res.cloudinary.com/dc1bmavl5/image/upload/f_auto,q_auto/v1755416736/Avocado_Egg_Toast_Cups_1_uvis8v.avif",
       "dataKeywords": "bread,egg,eggs,avocado",
-
       "prepTimeMin": 7,
       "cookTimeMin": 15,
       "coolTime": 0,
-
       "servings": 2,
-
       "ingredients": [
         "2 slices of bread",
         "1 ripe Avocado",
@@ -222,22 +566,90 @@
           "link": "spicy-corn-and-coconut-bites",
           "name": "Spicy Corn & Coconut Bites"
         }
-      ]
+      ],
+      "utility": {
+        "mode": "cook",
+        "groceryList": [
+          { "item": "Bread", "quantity": "2 slices" },
+          { "item": "Ripe avocado", "quantity": "1" },
+          { "item": "Eggs", "quantity": "2" },
+          { "item": "Salt", "quantity": "A pinch" },
+          { "item": "Chili flakes", "quantity": "A pinch" }
+        ],
+        "equipment": [
+          "Muffin tin",
+          "Oven",
+          "Fork (for mashing avocado)",
+          "Spoon or brush (for greasing)"
+        ],
+        "stepFlow": [
+          {
+            "step": "0",
+            "text": "Ready? Swipe left to begin.",
+            "estTimeMin": 22
+          },
+          {
+            "step": 1,
+            "text": "Preheat oven to 180°C (360°F).",
+            "estTimeMin": 5
+          },
+          {
+            "step": 2,
+            "text": "Grease muffin tin and press one bread slice into each cup.",
+            "estTimeMin": 3
+          },
+          {
+            "step": 3,
+            "text": "Crack one egg into each bread cup.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 4,
+            "text": "Sprinkle a pinch of salt over each.",
+            "estTimeMin": 1
+          },
+          {
+            "step": 5,
+            "text": "Bake for 15 minutes until egg is set.",
+            "estTimeMin": 15
+          },
+          {
+            "step": 6,
+            "text": "Mash avocado with a fork and season with salt.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 7,
+            "text": "Top each cup with mashed avocado and chili flakes.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 8,
+            "text": "Congratulations🎊, you have just completed this recipe.",
+            "estTimeMin": 0
+          }
+        ],
+        "notes": {
+          "userNotesEnabled": true,
+          "defaultTip": "Use soft sandwich bread — it molds into the muffin tin easily without cracking."
+        },
+        "leftovers": {
+          "storage": "Best eaten fresh — avocado browns quickly",
+          "shelfLife": "Same day",
+          "reheat": "Oven at 160°C for 5 minutes (without avocado topping)"
+        }
+      }
     },
-
     {
       "id": "crispy-chickpea-snack",
       "title": "Crispy Chickpea Snack",
-      "description": "⭐Crunchy, savory, and unbelievably addictive. These Crispy Chickpeas are the perfect quick snack when you want something light but full of flavor. Seasoned simply and roasted until golden, they deliver a satisfying crunch that rivals chips but with a wholesome twist. Great for movie nights, topping salads, or snacking straight from the bowl, they’re easy to make and endlessly customizable.",
+      "description": "⭐Crunchy, savory, and unbelievably addictive. These Crispy Chickpeas are the perfect quick snack when you want something light but full of flavor. Seasoned simply and roasted until golden, they deliver a satisfying crunch that rivals chips but with a wholesome twist. Great for movie nights, topping salads, or snacking straight from the bowl, they're easy to make and endlessly customizable.",
       "image": "https://res.cloudinary.com/dc1bmavl5/image/upload/f_auto,q_auto/v1755416737/Crispy_Chickpea_snack_1_okfeab.avif",
       "dataKeywords": "garlic,paprika,cheakpeas,cheakpea",
-
       "prepTimeMin": 6,
       "cookTimeMin": 30,
       "coolTime": 0,
-
       "servings": 2,
-
       "ingredients": [
         "1 can of chickpeas",
         "Olive oil",
@@ -254,22 +666,87 @@
           "link": "sweet-potato-bites-with-yougurt-dip",
           "name": "sweet Potato Bites With Yogurt Dip"
         }
-      ]
+      ],
+      "utility": {
+        "mode": "cook",
+        "groceryList": [
+          { "item": "Canned chickpeas", "quantity": "1 can" },
+          { "item": "Olive oil", "quantity": "1 tbsp" },
+          { "item": "Smoked paprika", "quantity": "½ tsp" },
+          { "item": "Garlic powder", "quantity": "½ tsp" },
+          { "item": "Salt", "quantity": "A pinch" },
+          { "item": "Chili flakes", "quantity": "A pinch" }
+        ],
+        "equipment": [
+          "Colander or sieve",
+          "Paper towel",
+          "Mixing bowl",
+          "Baking tray",
+          "Oven"
+        ],
+        "stepFlow": [
+          {
+            "step": "0",
+            "text": "Ready? Swipe left to begin.",
+            "estTimeMin": 36
+          },
+          {
+            "step": 1,
+            "text": "Preheat oven to 200°C (400°F).",
+            "estTimeMin": 5
+          },
+          {
+            "step": 2,
+            "text": "Rinse chickpeas and pat completely dry with paper towel.",
+            "estTimeMin": 4
+          },
+          {
+            "step": 3,
+            "text": "Toss chickpeas with olive oil and all spices.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 4,
+            "text": "Spread on a baking tray in a single layer.",
+            "estTimeMin": 1
+          },
+          {
+            "step": 5,
+            "text": "Bake for 30 minutes, shaking the tray halfway through.",
+            "estTimeMin": 30
+          },
+          {
+            "step": 6,
+            "text": "Let cool for 5 minutes — they crisp up more as they cool.",
+            "estTimeMin": 5
+          },
+          {
+            "step": 7,
+            "text": "Congratulations🎊, you have just completed this recipe.",
+            "estTimeMin": 0
+          }
+        ],
+        "notes": {
+          "userNotesEnabled": true,
+          "defaultTip": "Drying the chickpeas thoroughly is the key step — any moisture will steam them instead of roasting them crispy."
+        },
+        "leftovers": {
+          "storage": "Store in an open bowl or loosely covered at room temperature",
+          "shelfLife": "1 day",
+          "reheat": "Bake at 200°C for 5 minutes to re-crisp"
+        }
+      }
     },
-
     {
       "id": "mini-caprese-skewers",
       "title": "Mini Caprese Skewers",
-      "description": "⭐Fresh, colorful, and effortlessly elegant. These Mini Caprese Skewers bring together juicy cherry tomatoes, creamy mozzarella, and fragrant basil in a bite‑sized twist on the classic Italian salad. Drizzled with a touch of olive oil and balsamic, they’re the perfect quick appetizer for parties, picnics, or light snacking. Simple ingredients, beautiful presentation, and ready in minutes.",
+      "description": "⭐Fresh, colorful, and effortlessly elegant. These Mini Caprese Skewers bring together juicy cherry tomatoes, creamy mozzarella, and fragrant basil in a bite‑sized twist on the classic Italian salad. Drizzled with a touch of olive oil and balsamic, they're the perfect quick appetizer for parties, picnics, or light snacking. Simple ingredients, beautiful presentation, and ready in minutes.",
       "image": "https://res.cloudinary.com/dc1bmavl5/image/upload/f_auto,q_auto/v1755416736/Mini_caprese_skewer_1_yiwcrc.avif",
       "dataKeywords": "basil,mozzarella,tomatoes,tomatoe",
-
       "prepTimeMin": 10,
       "cookTimeMin": 0,
       "coolTime": 0,
-
       "servings": 2,
-
       "ingredients": [
         "4 cherry tomatoes",
         "4 mini mozzarella ball ",
@@ -284,22 +761,70 @@
           "link": "rice-and-yogurt-bowl",
           "name": "Rice And Yogurt Bowl"
         }
-      ]
+      ],
+      "utility": {
+        "mode": "cook",
+        "groceryList": [
+          { "item": "Cherry tomatoes", "quantity": "4" },
+          { "item": "Mini mozzarella balls", "quantity": "4" },
+          { "item": "Fresh basil leaves", "quantity": "4" },
+          { "item": "Olive oil", "quantity": "A drizzle" },
+          { "item": "Black pepper", "quantity": "A pinch" }
+        ],
+        "equipment": ["Toothpicks or small skewers", "Plate"],
+        "stepFlow": [
+          {
+            "step": "0",
+            "text": "Ready? Swipe left to begin.",
+            "estTimeMin": 10
+          },
+          {
+            "step": 1,
+            "text": "Wash cherry tomatoes and basil leaves.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 2,
+            "text": "Thread one tomato, one mozzarella ball, and one basil leaf onto each toothpick.",
+            "estTimeMin": 5
+          },
+          {
+            "step": 3,
+            "text": "Arrange on a plate and drizzle with olive oil.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 4,
+            "text": "Season with black pepper and serve.",
+            "estTimeMin": 1
+          },
+          {
+            "step": 5,
+            "text": "Congratulations🎊, you have just completed this recipe.",
+            "estTimeMin": 0
+          }
+        ],
+        "notes": {
+          "userNotesEnabled": true,
+          "defaultTip": "A small drizzle of balsamic glaze over the finished skewers takes the flavor to the next level."
+        },
+        "leftovers": {
+          "storage": "Store in fridge covered with cling film",
+          "shelfLife": "1 day",
+          "reheat": "No reheating needed — serve cold"
+        }
+      }
     },
-
     {
       "id": "cheesy-mango-poppers",
       "title": "Cheesy Mango Poppers",
-      "description": "⭐Sweet, creamy, and irresistibly crispy. These Cheesy Mango Poppers blend juicy mango with melted cheese for a fun, surprising snack that hits both fruity and savory notes. Wrapped in a golden crust and fried to perfection, they’re perfect for parties, movie nights, or whenever you want a quick treat with a tropical twist. Simple ingredients, bold flavor, and ready in minutes.",
+      "description": "⭐Sweet, creamy, and irresistibly crispy. These Cheesy Mango Poppers blend juicy mango with melted cheese for a fun, surprising snack that hits both fruity and savory notes. Wrapped in a golden crust and fried to perfection, they're perfect for parties, movie nights, or whenever you want a quick treat with a tropical twist. Simple ingredients, bold flavor, and ready in minutes.",
       "image": "https://res.cloudinary.com/dc1bmavl5/image/upload/f_auto,q_auto/v1755416736/ChatGPT_Image_May_15_2025_03_18_28_PM_1_zeq5x4.avif",
       "dataKeywords": "cheese,nachos,cornflakes,mango",
-
       "prepTimeMin": 16,
       "cookTimeMin": 0,
       "coolTime": 30,
-
       "servings": 2,
-
       "ingredients": [
         "Ripe mango ",
         "Cream cheese ",
@@ -318,22 +843,79 @@
           "link": "banana-oat-energy-bites",
           "name": "Banana Oat Energy Bites"
         }
-      ]
+      ],
+      "utility": {
+        "mode": "cook",
+        "groceryList": [
+          { "item": "Ripe mango", "quantity": "1" },
+          { "item": "Cream cheese", "quantity": "3–4 tbsp" },
+          { "item": "Crushed nachos or cornflakes", "quantity": "½ cup" },
+          { "item": "Toothpicks", "quantity": "A few" }
+        ],
+        "equipment": ["Knife", "Plate or tray", "Freezer", "Small bowl"],
+        "stepFlow": [
+          {
+            "step": "0",
+            "text": "Ready? Swipe left to begin.",
+            "estTimeMin": 46
+          },
+          {
+            "step": 1,
+            "text": "Cut mango into bite-sized cubes.",
+            "estTimeMin": 4
+          },
+          {
+            "step": 2,
+            "text": "Place cubes on a tray and freeze for 30 minutes.",
+            "estTimeMin": 30
+          },
+          {
+            "step": 3,
+            "text": "Crush nachos or cornflakes in a bowl.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 4,
+            "text": "Wrap each frozen mango cube with a thin layer of cream cheese.",
+            "estTimeMin": 5
+          },
+          {
+            "step": 5,
+            "text": "Roll each wrapped cube in the crushed nachos or cornflakes.",
+            "estTimeMin": 3
+          },
+          {
+            "step": 6,
+            "text": "Serve immediately with toothpicks.",
+            "estTimeMin": 1
+          },
+          {
+            "step": 7,
+            "text": "Congratulations🎊, you have just completed this recipe.",
+            "estTimeMin": 0
+          }
+        ],
+        "notes": {
+          "userNotesEnabled": true,
+          "defaultTip": "Work quickly after taking the mango out of the freezer — the cream cheese spreads better when the cubes are still firm and cold."
+        },
+        "leftovers": {
+          "storage": "Store in freezer on a tray",
+          "shelfLife": "1 day",
+          "reheat": "No reheating needed — serve straight from freezer"
+        }
+      }
     },
-
     {
       "id": "garri-cookies",
       "title": "Garri cookies",
       "description": "⭐Crispy on the outside, soft on the inside. These Garri Cookies transform a classic West African staple into a fun, modern treat. Made with garri, butter, sugar, and a touch of vanilla, they deliver a lightly crunchy texture and a warm, comforting flavor. Perfect for quick snacks, tea time, or sharing with friends, these cookies are simple to make and bring a unique twist to traditional baking.",
       "image": "https://res.cloudinary.com/dc1bmavl5/image/upload/f_auto,q_auto/v1756387907/ChatGPT_Image_Aug_28_2025_03_14_34_PM_11zon_l2hj8t.avif",
       "dataKeywords": "garri, cookies,sugar",
-
       "prepTimeMin": 6,
       "cookTimeMin": 15,
       "coolTime": 0,
-
       "servings": 2,
-
       "ingredients": [
         "1 cup of powdered garri",
         "1/2 cup butter(margarine)",
@@ -353,22 +935,85 @@
           "link": "zesty-cucumber-chips",
           "name": "Zesty Cucumber Chips"
         }
-      ]
+      ],
+      "utility": {
+        "mode": "cook",
+        "groceryList": [
+          { "item": "Powdered garri", "quantity": "1 cup" },
+          { "item": "Butter or margarine", "quantity": "½ cup" },
+          { "item": "Sugar", "quantity": "¼ cup" },
+          { "item": "Vanilla flavor", "quantity": "1 drop" }
+        ],
+        "equipment": [
+          "Mixing bowl",
+          "Baking tray",
+          "Oven",
+          "Spoon or brush (for greasing)"
+        ],
+        "stepFlow": [
+          {
+            "step": "0",
+            "text": "Ready? Swipe left to begin.",
+            "estTimeMin": 21
+          },
+          {
+            "step": 1,
+            "text": "Preheat oven to 180°C (350°F).",
+            "estTimeMin": 5
+          },
+          {
+            "step": 2,
+            "text": "Cream butter and sugar in a bowl until light and fluffy.",
+            "estTimeMin": 3
+          },
+          {
+            "step": 3,
+            "text": "Add garri and a drop of vanilla flavor.",
+            "estTimeMin": 1
+          },
+          {
+            "step": 4,
+            "text": "Mix until a soft dough forms.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 5,
+            "text": "Roll into small balls and flatten slightly onto a greased baking tray.",
+            "estTimeMin": 4
+          },
+          {
+            "step": 6,
+            "text": "Bake for 15 minutes until golden brown.",
+            "estTimeMin": 15
+          },
+          { "step": 7, "text": "Let cool before serving.", "estTimeMin": 5 },
+          {
+            "step": 8,
+            "text": "Congratulations🎊, you have just completed this recipe.",
+            "estTimeMin": 0
+          }
+        ],
+        "notes": {
+          "userNotesEnabled": true,
+          "defaultTip": "Don't skip the cooling time — the cookies firm up and develop their final texture as they cool."
+        },
+        "leftovers": {
+          "storage": "Store in an airtight container at room temperature",
+          "shelfLife": "3 days",
+          "reheat": "No reheating needed"
+        }
+      }
     },
-
     {
       "id": "rice-and-yogurt-bowl",
       "title": "Rice & Yogurt Bowl",
-      "description": "⭐A cool, creamy, refreshing bowl that turns leftover rice into something delicious in minutes. This Rice & Yogurt Bowl combines tender rice, smooth yogurt, crisp cucumber, and fresh mint for a light, hydrating meal that’s ready fast and tastes incredibly clean. Ideal for hot days, quick lunches, or whenever you want something nourishing without cooking.",
+      "description": "⭐A cool, creamy, refreshing bowl that turns leftover rice into something delicious in minutes. This Rice & Yogurt Bowl combines tender rice, smooth yogurt, crisp cucumber, and fresh mint for a light, hydrating meal that's ready fast and tastes incredibly clean. Ideal for hot days, quick lunches, or whenever you want something nourishing without cooking.",
       "image": "https://res.cloudinary.com/dc1bmavl5/image/upload/f_auto,q_auto:eco/v1757086463/jnqjc66srjc0k2zadz1l_nsnwwo.avif",
       "dataKeywords": "rice,healthy,yogurt,mint,vegetables,cooling",
-
       "prepTimeMin": 8,
       "cookTimeMin": 0,
       "coolTime": 0,
-
       "servings": 1,
-
       "ingredients": [
         "1 cup cooked rice",
         "1/2 cup plain yogurt",
@@ -376,7 +1021,6 @@
         "Fresh mint",
         "Pinch of salt"
       ],
-
       "steps": [
         "Add cooked and cooled rice to a bowl.",
         "Stir in plain yogurt until evenly coated.",
@@ -388,20 +1032,70 @@
           "link": "frozen-banana-s´more-bites",
           "name": "Frozen Banana S`more Bites"
         }
-      ]
+      ],
+      "utility": {
+        "mode": "cook",
+        "groceryList": [
+          { "item": "Cooked rice", "quantity": "1 cup" },
+          { "item": "Plain yogurt", "quantity": "½ cup" },
+          { "item": "Cucumber", "quantity": "½, chopped" },
+          { "item": "Fresh mint", "quantity": "A few leaves" },
+          { "item": "Salt", "quantity": "A pinch" }
+        ],
+        "equipment": ["Bowl", "Knife", "Spoon"],
+        "stepFlow": [
+          {
+            "step": "0",
+            "text": "Ready? Swipe left to begin.",
+            "estTimeMin": 8
+          },
+          {
+            "step": 1,
+            "text": "Make sure your rice is cooked and cooled.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 2,
+            "text": "Add rice to a bowl and stir in yogurt until evenly coated.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 3,
+            "text": "Chop cucumber and tear mint leaves.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 4,
+            "text": "Mix in cucumber, mint, and a pinch of salt.",
+            "estTimeMin": 1
+          },
+          { "step": 5, "text": "Serve chilled.", "estTimeMin": 1 },
+          {
+            "step": 6,
+            "text": "Congratulations🎊, you have just completed this recipe.",
+            "estTimeMin": 0
+          }
+        ],
+        "notes": {
+          "userNotesEnabled": true,
+          "defaultTip": "This works best with leftover rice that's already cold — freshly cooked hot rice will make the yogurt watery."
+        },
+        "leftovers": {
+          "storage": "Store in fridge in airtight container",
+          "shelfLife": "1 day",
+          "reheat": "No reheating needed — serve cold"
+        }
+      }
     },
-
     {
       "id": "choco-chili-banana-chips",
       "title": "Choco Chili Banana Chips",
       "description": "⭐Choco Chili Banana Chips made with ripe plantain, dark chocolate and chili powder. A perfect snack or party appetizer with a savory crunch.",
       "image": "https://res.cloudinary.com/dc1bmavl5/image/upload/f_auto,q_auto/v1755416738/Choco_Chili_Banana_Chips_Delight_1_z8nxnl.avif",
       "dataKeywords": "plantains,banana,chili",
-
       "prepTimeMin": 7,
       "cookTimeMin": 10,
       "coolTime": 0,
-
       "servings": 3,
       "ingredients": [
         "2 ripe plantains",
@@ -420,7 +1114,69 @@
           "link": "zesty-cucumber-chips",
           "name": "Zesty Cucumber Chips"
         }
-      ]
+      ],
+      "utility": {
+        "mode": "cook",
+        "groceryList": [
+          { "item": "Ripe plantains", "quantity": "2" },
+          { "item": "Dark chocolate", "quantity": "½ cup, melted" },
+          { "item": "Chili powder", "quantity": "A pinch" },
+          { "item": "Salt", "quantity": "A pinch" }
+        ],
+        "equipment": [
+          "Knife",
+          "Frying pan or baking tray",
+          "Small bowl (for melted chocolate)",
+          "Plate or tray lined with parchment"
+        ],
+        "stepFlow": [
+          {
+            "step": "0",
+            "text": "Ready? Swipe left to begin.",
+            "estTimeMin": 22
+          },
+          { "step": 1, "text": "Thinly slice plantains.", "estTimeMin": 3 },
+          {
+            "step": 2,
+            "text": "Fry or bake slices until crisp and golden.",
+            "estTimeMin": 10
+          },
+          {
+            "step": 3,
+            "text": "Melt dark chocolate in a small bowl.",
+            "estTimeMin": 2
+          },
+          {
+            "step": 4,
+            "text": "Dip one half of each chip into the melted chocolate.",
+            "estTimeMin": 4
+          },
+          {
+            "step": 5,
+            "text": "Sprinkle chili powder and salt over the chocolate side.",
+            "estTimeMin": 1
+          },
+          {
+            "step": 6,
+            "text": "Place on parchment and let the chocolate set.",
+            "estTimeMin": 5
+          },
+          {
+            "step": 7,
+            "text": "Congratulations🎊, you have just completed this recipe.",
+            "estTimeMin": 0
+          }
+        ],
+        "notes": {
+          "userNotesEnabled": true,
+          "defaultTip": "Let the chips cool completely before dipping in chocolate — hot chips will melt it too fast and make a mess."
+        },
+        "leftovers": {
+          "storage": "Store in an airtight container at room temperature",
+          "shelfLife": "2 days",
+          "reheat": "No reheating needed"
+        }
+      }
     }
   ]
 }
