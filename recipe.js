@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 window.addEventListener("load", () => {
   const preloader = document.getElementById("preloader");
+  if(!preloader) return;
   preloader.style.opacity = "0";
   preloader.style.display = "none";
 });
@@ -55,9 +56,9 @@ function darkMode() {
   isDark = !isDark;
 
   // Apply UI
-  body.classList.toggle("darkMode", !isDark);
+  body.classList.toggle("darkMode", isDark);
   if (darkModeBtn) {
-    darkModeBtn.textContent = isDark ? "Dark Mode" : "Light Mode";
+    darkModeBtn.textContent = isDark ? "☀️Light Mode" : "🌙Dark Mode";
   }
 
   // Save
@@ -70,11 +71,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const isDark = localStorage.getItem("darkMode") === "true";
 
-  body.classList.toggle("darkMode", !isDark);
+  body.classList.toggle("darkMode", isDark);
   if (darkModeBtn) {
-    darkModeBtn.textContent = isDark ? "Dark Mode" : "Light Mode";
+    darkModeBtn.textContent = isDark ? "Light Mode" : "Dark Mode";
   }
 });
+
 
 /*
 //check if user has already seen the popup
