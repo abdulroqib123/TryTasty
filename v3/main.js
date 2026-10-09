@@ -5,6 +5,9 @@ import {
   logout,
   onUserAuthChange,
 } from "./../v3/js/auth.js";
+import {
+  magnifyImg
+} from "https://ui.scybud.com/js/ui.js"
 
 const logoutBtn = document.getElementById("logoutBtn");
 export const welcomeText = document.getElementById("welcomeText");
@@ -195,3 +198,8 @@ if (logoutBtn) {
     }
   });
 }
+
+const imgs = document?.querySelectorAll("img")
+imgs.forEach((img) => {
+  magnifyImg(img)
+})

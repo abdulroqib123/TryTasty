@@ -59,11 +59,7 @@ body.lightMode #sidebar {
   left: 0; /* slide in */
   border-radius: 10px;
 }
-.actionBtns {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
+
 /* Menu Icon */
 .menu-icon {
   width: 25px;

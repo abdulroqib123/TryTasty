@@ -66,8 +66,7 @@ select:focus {
 
 /* Buttons */
 button,
-#popup-button,
-#loginLink {
+#popup-button {
   background: var(--btn-bg);
   border: none;
   padding: 14px;
@@ -90,8 +89,16 @@ button:focus {
   opacity: 0.9;
 }
 
-#logoutBtn,
 #loginLink {
+  display: block;
+  max-width: fit-content;
+padding: 6px 18px;
+border-radius: 22px;
+color: var(--text);
+font-weight: 600;
+background: var(--btn-bg);
+}
+#logoutBtn {
   color: #1d1d1d;
   flex: 1;
   border: none;

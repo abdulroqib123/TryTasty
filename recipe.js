@@ -58,7 +58,7 @@ function darkMode() {
   // Apply UI
   body.classList.toggle("darkMode", isDark);
   if (darkModeBtn) {
-    darkModeBtn.textContent = isDark ? "☀️Light Mode" : "🌙Dark Mode";
+    darkModeBtn.textContent = isDark ? "☀️" : "🌙";
   }
 
   // Save
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   body.classList.toggle("darkMode", isDark);
   if (darkModeBtn) {
-    darkModeBtn.textContent = isDark ? "Light Mode" : "Dark Mode";
+    darkModeBtn.textContent = isDark ? "☀️" : "🌙";
   }
 });
 
