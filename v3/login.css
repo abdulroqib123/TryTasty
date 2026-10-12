@@ -1,6 +1,6 @@
 /* Popup Overlay */
 #popup {
-  background: rgba(0, 0, 0, 0.65);
+  background: var(--overlay);
   display: none;
   justify-content: center;
   align-items: center;
@@ -17,28 +17,28 @@
 }
 /* Popup Box */
 #popup-content {
-  color: var(--color);
+  color: var(--text-primary);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 30px;
   border-radius: 10px;
-  background: var(--main-bg);
-  border: 2px solid var(--btn-bg);
+  background: var(--card-bg);
+  border: 2px solid var(--primary);
   backdrop-filter: blur(100px) brightness(60%);
   max-width: 600px;
   margin: 0 20px;
   text-align: center;
-  animation: fadeIn 0.25s ease;
+  animation: fadeIn var(--transition-normal);
 }
 .modalHeader {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: var(--text-2xl);
+  font-weight: var(--font-semibold);
 }
 .infoText {
   opacity: 0.5;
-  font-size: 12px;
+  font-size: var(--text-xs);
   margin: 0;
   padding: 0;
   text-align: center;
@@ -69,7 +69,7 @@
   justify-content: center;
   align-items: center;
   gap: 3px;
-  background-color: #f98508;
+  background-color: var(--warning);
 }
 
 .google-btn svg {
@@ -85,7 +85,7 @@
   color: #ffd061;
   font-size: 28px;
   margin: 0 10px;
-  transition: 0.25s;
+  transition: var(--transition-normal);
 }
 .social-icons a:hover {
   color: #ff9e00;
@@ -106,7 +106,7 @@ form a {
   padding: 10px;
   border-radius: 6px;
   margin-top: 10px;
-  font-size: 1rem;
+  font-size: var(--text-md);
 }
 p.errorShow {
   display: block;
@@ -145,7 +145,7 @@ p.errorShow {
   width: 10px;
   height: 10px;
   border: 2px solid transparent;
-  border-right-color: #151515;
+  border-right-color: var(--surface-secondary);
   border-radius: 50%;
   animation: rotate 0.7s linear infinite;
   display: inline-block;

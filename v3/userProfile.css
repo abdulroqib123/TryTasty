@@ -6,7 +6,7 @@ main {
   height: auto;
 }
 #Useremail {
-  color: #ffa726; /* or whatever text color you use */
+  color: var(--warning); /* or whatever text color you use */
   text-decoration: none;
   cursor: default;
 }
@@ -25,28 +25,28 @@ main {
   height: 50px;
   padding: 5px;
   margin: 20px auto;
-  border: 2px solid #e69500;
+  border: 2px solid var(--warning);
   border-radius: 50%;
   transition:
     border-radius 0.5s ease,
     transform 0.5s ease;
 }
 .userProfileContainer span {
-  font-size: 16px;
-  color: rgb(255, 106, 0);
+  font-size: var(--text-md);
+  color: var(--primary);
 }
 .redActions {
   margin-top: auto;
   width: 100%;
-  border-top: 2px solid red;
+  border-top: 2px solid var(--danger);
 }
 .statsBox {
   display: flex;
   justify-content: space-evenly;
-  border: 2px solid orange;
+  border: 2px solid var(--warning);
   padding: 0;
   flex-wrap: wrap;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
 }
 
 .show {

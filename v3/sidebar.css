@@ -1,9 +1,6 @@
-
 body.darkMode #sidebar {
-  --sidebar-bg: #1e1e1e;
-  --color: #f5f5dc;
-  --icon-color: #161616;
   --shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  --icon-color: #161616;
   --link-border: yellow;
 }
 .lockScroll {
@@ -11,8 +8,6 @@ body.darkMode #sidebar {
 }
 /* Sidebar */
 #sidebar {
-   --color: #161616;
-  --sidebar-bg: #f7f7f7;
   --shadow: 0 0 15px rgba(0, 0, 0, 0.8);
   --link-border: orange;
 
@@ -21,9 +16,8 @@ body.darkMode #sidebar {
   z-index: 9999;
   left: -100%;
   width: 300px;
-  box-shadow: var(--shadow);
   height: 100vh; /* required for scrolling */
-  background-color: var(--sidebar-bg);
+  background-color: var(--card-bg);
   padding: 0 20px 20px 20px;
   display: flex;
   justify-content: flex-start;
@@ -31,9 +25,12 @@ body.darkMode #sidebar {
   flex-wrap: nowrap;
   transition: left 0.6s ease;
   border-radius: 10px;
-  color: var(--color);
+  color: var(--text-primary);
   overflow-y: auto; /* enables vertical scrolling */
   overflow-x: auto; /* prevents side scroll */
+}
+body:not(.darkMode) #sidebar {
+  --text-primary: #161616;
 }
 /* SIDEBAR SCROLLBAR */
 /* width */
@@ -43,19 +40,19 @@ body.darkMode #sidebar {
 
 /* Track */
 #sidebar::-webkit-scrollbar-track {
-  background: #444; /* softer dark */
-  border-radius: 10px;
+  background: var(--surface-secondary); /* softer dark */
+  border-radius: var(--radius-sm);
 }
 
 /* Handle */
 #sidebar::-webkit-scrollbar-thumb {
-  background: #ffd900;
+  background: var(--surface-primary);
   border-radius: 10px;
 }
 
 /* Handle hover */
 #sidebar::-webkit-scrollbar-thumb:hover {
-  background: #e0bf00; /* darker yellow, still consistent */
+  background: var(--surface-primary); /* darker yellow, still consistent */
 }
 
 #sidebar.show {
@@ -94,7 +91,7 @@ body.darkMode #sidebar {
 
 span {
   color: var(--span);
-  font-size: 24px;
+  font-size: var(--text-2xl);
 }
 @media (max-width: 600px) {
   /* Sidebar */
@@ -110,14 +107,13 @@ span {
 }
 
 .page-nav a {
-  text-align: center;
-  border: 1px solid var(--link-border);
+  border-bottom: 1px solid var(--border-primary);
   border-radius: 10px;
   padding-left: 4px;
-  transition: all 0.4s ease;
+  transition: all var(--transition-slow);
   color: var(--span);
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: var(--text-2xl);
+  font-weight: var(--font-semibold);
   background: linear-gradient(#5656564b 0 0) left/0 100% no-repeat;
 }
 
@@ -137,7 +133,7 @@ span {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--overlay);
   position: fixed;
   top: 0;
   left: 0;

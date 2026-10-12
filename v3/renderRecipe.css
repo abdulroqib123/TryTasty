@@ -3,7 +3,7 @@ body .meta span {
 }
 
 body.darkMode .meta span {
-  --border-color: #ffa500;
+  --border-color: var(--warning);
 }
 .meta {
   display: flex;
@@ -14,9 +14,9 @@ body.darkMode .meta span {
 }
 .meta span,
 .valueData {
-  font-size: 16px;
+  font-size: var(--text-md);
   border: 2px solid var(--border-color);
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   padding: 0 9px;
   cursor: default;
   transition: transform 0.5s ease;
@@ -30,7 +30,7 @@ body.darkMode .meta span {
   color: #e65c00;
   text-align: center;
   margin-bottom: 10px;
-  border-bottom: 2px solid #ffa94d;
+  border-bottom: 2px solid var(--warning);
   padding-bottom: 5px;
 }
 #recipe h2 {
@@ -52,15 +52,14 @@ ol li {
   font-size: 1.2rem;
 }
 li::marker {
-    font-size: 1.5rem;
-  color: var(--link-color);
+  font-size: var(--text-2xl);
+  color: var(--link);
 }
 
 ol {
   counter-reset: step;
   list-style: none;
   padding: 0;
-  
 }
 
 ol li {
@@ -71,8 +70,8 @@ ol li {
 }
 ol li:hover::before {
   color: white;
-  background-color: var(--link-color);
-  border: 0.5px solid var(--color);
+  background-color: var(--link);
+  border: 0.5px solid var(--text-primary);
 }
 ol li::before {
   content: counter(step);
@@ -82,13 +81,13 @@ ol li::before {
   width: 32px;
   height: 32px;
   backdrop-filter: var(--filter);
-  color: var(--link-color);
-  border-radius: 8px;
+  color: var(--link);
+  border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
-  transition: 0.4s;
+  font-weight: var(--font-bold);
+  transition: var(--transition-slow);
 }
 
 
@@ -106,7 +105,7 @@ ol li::before {
 }
 .recipeDesc {
   background: var(--desc-bg);
-  border-radius: var(--radius);
+  border-radius: var(--radius-sm);
   padding: 6px;
 }
 @media (max-width: 700px) {
@@ -144,9 +143,9 @@ ol li::before {
 .recipeActionBtns button {
   margin: 0;
   padding: 0;
-  background: var(--btn-bg);
+  background: var(--primary);
   border: none;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   cursor: pointer;
   width: 80px;
   display: flex;
@@ -163,18 +162,18 @@ ol li::before {
   border-radius: 10px;
   font-size: 17px;
   opacity: 0.9;
-  font-weight: 600;
+  font-weight: var(--font-semibold);
   transition: 0.2s;
   width: 100%;
   max-width: 400px;
   margin: 22px auto 0;
   display: block;
   text-align: center;
-  color: #000000;
-  background-color: #f98508;
+  color: var(--on-primary);
+  background-color: var(--warning);
 }
 .activateCookMode:hover {
-  color: #000000;
+  color: var(--on-primary);
   text-decoration: none;
   background: #ff8b1a;
   transform: translateY(-2px);
@@ -184,7 +183,7 @@ ol li::before {
   opacity: 0.9;
 }
 .divider {
-  border-bottom: 2px solid #ffa94d;
+  border-bottom: 2px solid var(--warning);
 }
 
 .fadeOut {
@@ -218,7 +217,7 @@ ol li::before {
   appearance: none;
   width: 26px;
   height: 26px;
-  border: 2px solid #f98508;
+  border: 2px solid var(--warning);
   border-radius: 6px;
   cursor: pointer;
   position: relative;
@@ -227,13 +226,13 @@ ol li::before {
   align-items: center;
 }
 #recipeUtility label input[type="checkbox"]:checked {
-  background: #4caf50;
-  border-color: #4caf50;
+  background: var(--success);
+  border-color: var(--success);
 }
 #recipeUtility label input[type="checkbox"]:checked::after {
   content: "✓";
-  color: var(--color);
-  font-size: 1.5rem;
+  color: var(--text-primary);
+  font-size: var(--text-2xl);
 }
 #recipeUtility {
   overflow-y: auto;
@@ -248,7 +247,7 @@ ol li::before {
   padding-right: 0;
 }
 .valueData {
-  background: var(--bg);
+  background: var(--bg-primary);
   font-size: 1.2rem;
 }
 /* RECIPE UTILITY SCROLLBAR */
@@ -287,8 +286,8 @@ ol li::before {
 }
 
 .stepListContainer {
-  background: linear-gradient(to top, var(--bg), #f98508);
-  border-radius: 8px;
+  background: linear-gradient(to top, var(--bg-primary), var(--warning));
+  border-radius: var(--radius-sm);
   margin: 0 12px;
   display: flex;
   flex-direction: row;
@@ -309,10 +308,10 @@ ol li::before {
 #recipeUtility .stepListContainer div.steps {
   position: relative;
   padding: 0 29px;
-  font-weight: 600;
+  font-weight: var(--font-semibold);
   font-size: clamp(1rem, 7vw, 2rem);
   overflow: hidden;
-  border-right: 2px solid var(--color);
+  border-right: 2px solid var(--text-primary);
   min-width: 100%;
   text-align: center;
   scroll-snap-align: start;

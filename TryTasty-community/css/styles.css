@@ -64,7 +64,7 @@
   --input-textarea-border: #444;
   --link-color: #ff7300;
   --link-color-hover: #f59f1d;
-  --btn-bg: #ff6a00;
+  --primary: #ff6a00;
   --bg: #464545;
   --main-bg: #1e1e1e;
   --color: #ffffff;
@@ -227,7 +227,7 @@ textarea:focus {
 a.backBtn {
   text-decoration: none;
   border-radius: 8px;
-  background: var(--btn-bg);
+  background: var(--primary);
   padding: 6px;
   margin-bottom: 12px;
   color: beige;
@@ -235,7 +235,7 @@ a.backBtn {
   font-size: clamp(1.3rem, 1.5rem, 1.5rem);
 }
 .recipePageLink {
-  background: var(--btn-bg);
+  background: var(--primary);
   border: none;
   padding: 14px;
   border-radius: 10px;
@@ -247,7 +247,7 @@ a.backBtn {
 }
 /* Button */
 button {
-  background: var(--btn-bg);
+  background: var(--primary);
   border: none;
   padding: 14px;
   border-radius: 10px;
@@ -369,7 +369,7 @@ a.page-nav:hover {
   padding: 30px;
   border-radius: 10px;
   background: var(--main-bg);
-  border: 2px solid var(--btn-bg);
+  border: 2px solid var(--primary);
   backdrop-filter: blur(100px) brightness(60%);
 }
 .modalContentContainer h2 {
@@ -401,12 +401,12 @@ a.page-nav:hover {
   margin: 10px auto;
   min-width: 40%;
   background: none;
-  border: 2px solid var(--btn-bg);
+  border: 2px solid var(--primary);
   text-decoration: none;
 }
 
 .loginBtn:hover {
-  background: var(--btn-bg);
+  background: var(--primary);
   color: var(--color);
   text-decoration: none;
 }

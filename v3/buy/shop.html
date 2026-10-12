@@ -1,41 +1,41 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Cookiebot -->
+<!--SCYBUD UI-->
+    <link rel="stylesheet" href="https://ui.scybud.com/css/variables.css" />
+    <link rel="stylesheet" href="https://ui.scybud.com/css/typography.css" />
+    <link rel="stylesheet" href="https://ui.scybud.com/css/layout.css" />
+    <link rel="stylesheet" href="https://ui.scybud.com/css/animations.css" />
+
+    <!--COMPONENTS-->
+    <link
+      rel="stylesheet"
+      href="https://ui.scybud.com/components/sidebar/sidebar.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://ui.scybud.com/components/buttons/global-buttons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://ui.scybud.com/components/buttons/nav-buttons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://ui.scybud.com/components/buttons/modals.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://ui.scybud.com/components/forms/empty-state.css"
+    />
+
+    <!-- TrustBox script -->
     <script
-      id="Cookiebot"
-      src="https://consent.cookiebot.com/uc.js"
-      data-cbid="3eaa47f0-2a50-46a7-a7da-73a27cec1245"
       type="text/javascript"
+      src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
+      async
     ></script>
-
-    <!-- Cookie declaration -->
-    <script
-      id="CookieDeclaration"
-      src="https://consent.cookiebot.com/3eaa47f0-2a50-46a7-a7da-73a27cec1245/cd.js"
-      type="text/javascript"
-    ></script>
-
-    <!-- logic -->
-    <!-- Google tag (GA4) -->
-    <script type="text/plain" data-cookieconsent="statistics">
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-DDLCL6XBQR', {
-        anonymize_ip: true
-      });
-    </script>
-
-    <script
-      type="text/plain"
-      data-cookieconsent="statistics"
-      src="https://www.googletagmanager.com/gtag/js?id=G-DDLCL6XBQR"
-    ></script>
-
-            <!-- TrustBox script -->
-<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
-<!-- End TrustBox script -->
+    <!-- End TrustBox script -->
 
     <title>Buy Utensils | TryTasty</title>
     <meta charset="utf-8" />
@@ -126,7 +126,7 @@
       </div>
     </div>
 
-  <!--HEADER-->
+    <!--HEADER-->
     <header>
       <div style="display: flex; margin-left: 0" id="menuIconContainer">
         <div class="menu-icon">
@@ -138,7 +138,6 @@
           <div class="logo">TryTasty</div>
         </a>
       </div>
-
     </header>
     <div class="overlay"></div>
 
@@ -157,36 +156,42 @@
       <p>
         Find the best cooking utensils that will make cooking easier than ever.
       </p>
- <div  class="shopNotice">
-  <p>
-    <b>Quick note:</b> This page contains affiliate links (e.g. Amazon etc). We may earn a small commission at no extra cost to you. 
-    Learn more in our 
-    <a href="../doc/privacyGerman.html#affiliateProgram" target="_blank" rel="noopener">
-      affiliate & legal info
-    </a>.
-  </p>
-  <hr>
-  <p>
-     <b>Note:</b> Images may be <b>AI</b> generated and not accurate. Image
-        label shows on hover
-  </p>
-</div>
+      <div class="shopNotice">
+        <p>
+          <b>Quick note:</b> This page contains affiliate links (e.g. Amazon
+          etc). We may earn a small commission at no extra cost to you. Learn
+          more in our
+          <a
+            href="../doc/privacyGerman.html#affiliateProgram"
+            target="_blank"
+            rel="noopener"
+          >
+            affiliate & legal info </a
+          >.
+        </p>
+        <hr />
+        <p>
+          <b>Note:</b> Images may be <b>AI</b> generated and not accurate. Image
+          label shows on hover
+        </p>
+      </div>
 
+      <div class="tt-filter">
+        <svg
+          class="tt-filter-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 -960 960 960"
+        >
+          <path d="M120-120v-240l240-280v-200h240v200l240 280v240H120Z" />
+        </svg>
 
-  <div class="tt-filter">
-  <svg class="tt-filter-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-    <path d="M120-120v-240l240-280v-200h240v200l240 280v240H120Z"/>
-  </svg>
-
-  <select id="filter">
-    <option value="noFilter">🟠All marketplaces</option>
-    <option value="amazon">🟡Amazon</option>
-  </select>
-</div>
-
+        <select id="filter">
+          <option value="noFilter">🟠All marketplaces</option>
+          <option value="amazon">🟡Amazon</option>
+        </select>
+      </div>
 
       <article class="productContainer">
-        
         <!--
         <div class="productCardContainer">
   <div class="productItemContainer">
@@ -303,102 +308,137 @@
           >
         </div>
       </div>
-      -->
-      </article>
+      --></article>
     </main>
 
-    
     <footer>
-   <p  class="shopNotice">
-Quick note: This page contains affiliate links (e.g. Amazon etc). We may earn a small commission at no extra cost to you. 
-Learn more in our 
-<a href="../doc/privacyGerman.html#affiliateProgram" target="_blank" rel="noopener">
- affiliate & legal info
-</a>.
-</p>
+      <p class="shopNotice">
+        Quick note: This page contains affiliate links (e.g. Amazon etc). We may
+        earn a small commission at no extra cost to you. Learn more in our
+        <a
+          href="../doc/privacyGerman.html#affiliateProgram"
+          target="_blank"
+          rel="noopener"
+        >
+          affiliate & legal info </a
+        >.
+      </p>
       <section class="footerContainer">
-
         <div class="upperFooter">
-          <a title="Write a Feedback" href="../feedbacks/index.html" class="feedbackBtn" aria-label="Feedback">
- <svg
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="white"
-  xmlns="http://www.w3.org/2000/svg"
-  aria-hidden="true"
-  >
-  <path
-  d="M4 4H20C21.1 4 22 4.9 22 6V15C22 16.1 21.1 17 20 17H8L4 21V6C4 4.9 4.9 4 6 4Z"
-    stroke="currentColor"
-    stroke-width="1.8"
-    stroke-linejoin="round"
-  />
-</svg>
-
-</a>
-
-        <div class="social-icons">
           <a
-            href="https://youtube.com/@trytasty?si=DjZBx-oai7TXVWyt"
-            target="_blank"
-            title="YouTube"
-            class="social-icon"
+            title="Write a Feedback"
+            href="../feedbacks/index.html"
+            class="feedbackBtn"
+            aria-label="Feedback"
           >
             <svg
               width="24"
               height="24"
               viewBox="0 0 24 24"
               fill="white"
-              stroke="white"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <path
-              d="M19.615 3.184A3.011 3.011 0 0 1 21.73 5.3c.518 1.93.518 5.95.518 5.95s0 4.02-.518 5.95a3.011 3.011 0 0 1-2.115 2.115c-1.93.518-9.615.518-9.615.518s-7.685 0-9.615-.518A3.011 3.011 0 0 1 .385 17.2C-.133 15.27-.133 11.25-.133 11.25s0-4.02.518-5.95A3.011 3.011 0 0 1 2.5 3.184C4.43 2.666 12.115 2.666 12.115 2.666s7.685 0 9.615.518zM9.75 15.545l6-3.295-6-3.295v6.59z"
+                d="M4 4H20C21.1 4 22 4.9 22 6V15C22 16.1 21.1 17 20 17H8L4 21V6C4 4.9 4.9 4 6 4Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linejoin="round"
               />
             </svg>
-          </a> 
+          </a>
+
+          <div class="social-icons">
+            <a
+              href="https://youtube.com/@trytasty?si=DjZBx-oai7TXVWyt"
+              target="_blank"
+              title="YouTube"
+              class="social-icon"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="white"
+                stroke="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.615 3.184A3.011 3.011 0 0 1 21.73 5.3c.518 1.93.518 5.95.518 5.95s0 4.02-.518 5.95a3.011 3.011 0 0 1-2.115 2.115c-1.93.518-9.615.518-9.615.518s-7.685 0-9.615-.518A3.011 3.011 0 0 1 .385 17.2C-.133 15.27-.133 11.25-.133 11.25s0-4.02.518-5.95A3.011 3.011 0 0 1 2.5 3.184C4.43 2.666 12.115 2.666 12.115 2.666s7.685 0 9.615.518zM9.75 15.545l6-3.295-6-3.295v6.59z"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
-      </div>
 
-      <div class="footerLinks">
-        <span class="footerSectionHeader">Links</span>
-        <a href="../doc/about.html">About</a>
-        <a href="../submit.html">Submit a recipe</a>
-        <a href="../feedbacks/index.html">Send feedback</a>
-        <a href="../doc/privacyGerman.html">Imprint & privacy policy</a>
-        <a href="../buy/shop.html">Kitchen Tools Shop</a>
-      </div>
-    </section>
+        <div class="footerLinks">
+          <span class="footerSectionHeader">Links</span>
+          <a href="../doc/about.html">About</a>
+          <a href="../submit.html">Submit a recipe</a>
+          <a href="../feedbacks/index.html">Send feedback</a>
+          <a href="../doc/privacyGerman.html">Imprint & privacy policy</a>
+          <a href="../buy/shop.html">Kitchen Tools Shop</a>
+        </div>
+      </section>
 
-     <section class="footerContainer">
-      <a href="https://www.producthunt.com/products/trytasty?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-trytasty" target="_blank" rel="noopener noreferrer"><img alt="TryTasty - Discover tasty, easy‑to‑make snacks. | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1077150&amp;theme=dark&amp;t=1770745057105"></a>   
-      <!-- TrustBox widget - Review Collector -->
-   <div
-        class="trustpilot-widget"
-        data-locale="en-US"
-        data-template-id="56278e9abfbbba0bdcd568bc"
-        data-businessunit-id="69885f152706dd2e7b4402d3"
-        data-token="20df0dc3-c215-42df-b6e0-214624119af1"
+      <section class="footerContainer">
+        <a
+          href="https://www.producthunt.com/products/trytasty?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-trytasty"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            alt="TryTasty - Discover tasty, easy‑to‑make snacks. | Product Hunt"
+            width="250"
+            height="54"
+            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1077150&amp;theme=dark&amp;t=1770745057105"
+        /></a>
+        <!-- TrustBox widget - Review Collector -->
+        <div
+          class="trustpilot-widget"
+          data-locale="en-US"
+          data-template-id="56278e9abfbbba0bdcd568bc"
+          data-businessunit-id="69885f152706dd2e7b4402d3"
+          data-token="20df0dc3-c215-42df-b6e0-214624119af1"
         >
-        <a href="https://www.trustpilot.com/review/trytasty.de" target="_blank" rel="noopener">Trustpilot</a>
-      </div>
-      <!-- End TrustBox widget -->
-                              <a href="https://www.nxgntools.com/tools/trytasty?utm_source=trytasty" target="_blank" rel="noopener" style="display: inline-block; width: auto;">
-    <img src="https://www.nxgntools.com/api/embed/trytasty?type=FEATURED_ON&hideUpvotes=true" alt="NextGen Tools Badge - The #1 AI Tools Directory & Launch Platform" style="height: 48px; width: auto;" />
-</a>
+          <a
+            href="https://www.trustpilot.com/review/trytasty.de"
+            target="_blank"
+            rel="noopener"
+            >Trustpilot</a
+          >
+        </div>
+        <!-- End TrustBox widget -->
+        <a
+          href="https://www.nxgntools.com/tools/trytasty?utm_source=trytasty"
+          target="_blank"
+          rel="noopener"
+          style="display: inline-block; width: auto"
+        >
+          <img
+            src="https://www.nxgntools.com/api/embed/trytasty?type=FEATURED_ON&hideUpvotes=true"
+            alt="NextGen Tools Badge - The #1 AI Tools Directory & Launch Platform"
+            style="height: 48px; width: auto"
+          />
+        </a>
 
-<!--BUILDINPUBLC WIDGET-->
-<a href="https://forg.to/products/trytasty" target="_blank" rel="noopener">
-  <img src="https://forg.to/api/badges/upvote/trytasty?theme=dark&shape=rounded" alt="TryTasty - Upvote on Forg on forg." height="48" />
-</a>
-    </section>
+        <!--BUILDINPUBLC WIDGET-->
+        <a
+          href="https://forg.to/products/trytasty"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="https://forg.to/api/badges/upvote/trytasty?theme=dark&shape=rounded"
+            alt="TryTasty - Upvote on Forg on forg."
+            height="48"
+          />
+        </a>
+      </section>
 
-    <section class="footerContainer footerMiddleContainer">
-
-  <div class="newsletter-box">
+      <section class="footerContainer footerMiddleContainer">
+        <div class="newsletter-box">
           <label for="newsletterEmail" class="newsletter-label">
-Unlock Exclusive Snack Ideas: Join Our Newsletter!
+            Unlock Exclusive Snack Ideas: Join Our Newsletter!
           </label>
 
           <form
@@ -423,8 +463,8 @@ Unlock Exclusive Snack Ideas: Join Our Newsletter!
           </p>
         </div>
 
- <div id="FromScybud">
-        <span class="footerSectionHeader">Scybud Creations</span>
+        <div id="FromScybud">
+          <span class="footerSectionHeader">Scybud Creations</span>
           <div id="scybudApps">
             <a href="https://scyflix.github.io/RushSite/" target="_blank">
               <div class="container">
@@ -458,14 +498,14 @@ Unlock Exclusive Snack Ideas: Join Our Newsletter!
                 <img
                   src="https://res.cloudinary.com/dc1bmavl5/image/upload/v1750181306/My%20Brand/file_00000000610c6243beec099c93f3f4eb_wgtezq.png"
                   alt="Scybud Logo"
-                  />
-                  <span>Scybud</span>
-                </div>
-              </a>
-            </div>
+                />
+                <span>Scybud</span>
+              </div>
+            </a>
           </div>
-        </section>
-          
+        </div>
+      </section>
+
       <p>&copy; 2025 - 2026 TryTasty. All Rights reserved.</p>
     </footer>
 

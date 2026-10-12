@@ -40,10 +40,10 @@
   --footer-bg: #000000;
   --footer-text: #ffffff;
 
-  --btn-bg: #ff6a00;
-  --btn-bg-hover: #ff8b1a;
+  --primary: #ff6a00;
+  --primary-hover: #ff8b1a;
 
-   --popular-bg: #121212;
+  --popular-bg: #121212;
   --popular-border: rgba(255, 255, 255, 0.05);
   --popular-shadow: rgba(0, 0, 0, 0.35);
 
@@ -89,8 +89,8 @@
   --footer-bg: #fafafa;
   --footer-text: #222222;
 
-  --btn-bg: #ff6a00;
-  --btn-bg-hover: #ff8b1a;
+  --primary: #ff6a00;
+  --primary-hover: #ff8b1a;
 
   --popular-bg: #ffffff;
   --popular-border: rgba(0, 0, 0, 0.08);
@@ -220,7 +220,7 @@ body {
   transition: all 0.6s ease;
 }
 .header-btn:hover {
-  background-color: var(--btn-bg-hover);
+  background-color: var(--primary-hover);
 }
 /* =========================
    HERO
@@ -268,7 +268,7 @@ body {
   padding: 12px;
   border-radius: 999px;
   border: none;
-  background: var(--btn-bg);
+  background: var(--primary);
   color: #ffffff;
   font-weight: 600;
   cursor: pointer;
@@ -279,7 +279,7 @@ body {
 }
 
 .hero-buttons button:hover {
-  background: var(--btn-bg-hover);
+  background: var(--primary-hover);
   transform: translateY(-2px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
 }
@@ -500,7 +500,7 @@ body {
 }
 
 a {
-  color: var(--btn-bg);
+  color: var(--primary);
 }
 /* =========================
    CTA
@@ -523,7 +523,7 @@ a {
   padding: 10px 22px;
   border-radius: 999px;
   border: none;
-  background: var(--btn-bg);
+  background: var(--primary);
   color: #ffffff;
   font-weight: 600;
   cursor: pointer;
@@ -534,7 +534,7 @@ a {
 }
 
 .cta button:hover {
-  background: var(--btn-bg-hover);
+  background: var(--primary-hover);
   transform: translateY(-2px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
 }

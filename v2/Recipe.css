@@ -48,7 +48,9 @@ body.lightMode main nav {
   z-index: 1000;
   font-size: 16px;
   opacity: 0;
-  transition: opacity 0.5s, visibility 0.5s;
+  transition:
+    opacity 0.5s,
+    visibility 0.5s;
 }
 
 /* Show the toast */
@@ -84,7 +86,7 @@ a.backBtn {
   text-decoration: none;
   border: 1px solid #e65c00;
   border-radius: 8px;
-  background: var(--btn-bg);
+  background: var(--primary);
   padding: 6px;
   color: var(--color);
   font-size: clamp(1.3rem, 1.5rem, 1.5rem);
@@ -110,7 +112,9 @@ nav.page {
   height: 170px;
   overflow: hidden;
   background-color: var(--snackImg-bg);
-  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.3s ease;
   box-shadow: 0 0 8px rgba(119, 116, 116, 0.362);
 }
 .snackImage img {

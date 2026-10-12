@@ -3,37 +3,8 @@
 <html lang="en">
   <head>
     <link rel="canonical" href="https://trytasty.de/" />
-    <!-- Cookiebot -->
-    <script
-      id="Cookiebot"
-      src="https://consent.cookiebot.com/uc.js"
-      data-cbid="3eaa47f0-2a50-46a7-a7da-73a27cec1245"
-      type="text/javascript"
-    ></script>
-
-    <!-- Cookie declaration -->
-    <script
-      id="CookieDeclaration"
-      src="https://consent.cookiebot.com/3eaa47f0-2a50-46a7-a7da-73a27cec1245/cd.js"
-      type="text/javascript"
-    ></script>
 
     <!-- logic -->
-    <!-- Google tag (GA4) -->
-    <script type="text/plain" data-cookieconsent="statistics">
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-DDLCL6XBQR', {
-        anonymize_ip: true
-      });
-    </script>
-
-    <script
-      type="text/plain"
-      data-cookieconsent="statistics"
-      src="https://www.googletagmanager.com/gtag/js?id=G-DDLCL6XBQR"
-    ></script>
 
     <script type="application/ld+json">
       {
@@ -96,6 +67,35 @@
     />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--SCYBUD UI-->
+    <link rel="stylesheet" href="https://ui.scybud.com/css/variables.css" />
+    <link rel="stylesheet" href="https://ui.scybud.com/css/typography.css" />
+    <link rel="stylesheet" href="https://ui.scybud.com/css/layout.css" />
+    <link rel="stylesheet" href="https://ui.scybud.com/css/animations.css" />
+
+    <!--COMPONENTS-->
+    <link
+      rel="stylesheet"
+      href="https://ui.scybud.com/components/sidebar/sidebar.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://ui.scybud.com/components/buttons/global-buttons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://ui.scybud.com/components/buttons/nav-buttons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://ui.scybud.com/components/buttons/modals.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://ui.scybud.com/components/forms/empty-state.css"
+    />
+
     <link rel="stylesheet" href="Recipe.css" />
     <link rel="stylesheet" href="v3/sidebar.css" />
     <link rel="stylesheet" href="general.css" />
@@ -141,7 +141,7 @@
     <header>
       <div style="display: flex; margin-left: 0" id="menuIconContainer">
         <div
-        aria-label="Menu Icon"
+          aria-label="Menu Icon"
           arial-roledescription="icon"
           class="menu-icon"
         >
@@ -154,72 +154,67 @@
         </a>
       </div>
 
-       <div class="actionBtns">
-         
-          <a id="loginLink" href="v3/login.html">Login</a>
-          
-          <button id="dark-mode" aria-label="Dark Mode" onclick="darkMode()">
-            ☀️
-          </button>
-        </div>
+      <div class="actionBtns">
+        <a id="loginLink" href="v3/login.html">Login</a>
+
+        <button id="dark-mode" aria-label="Dark Mode" onclick="darkMode()">
+          ☀️
+        </button>
+      </div>
     </header>
-    
-    <div class="overlay">
-      
-    </div>
-      <nav class="page-nav" id="sidebar">
-        <div class="upperNavContainer">
-          <!--USER PROFILE LINK-->
-        </div>
-       
 
-        <a
-          title="Recipe Search Bot"
-          href="#resp"
-          class="botLink"
-          onclick="showPage('recipeBotForm')"
+    <div class="overlay"></div>
+    <nav class="page-nav" id="sidebar">
+      <div class="upperNavContainer">
+        <!--USER PROFILE LINK-->
+      </div>
+
+      <a
+        title="Recipe Search Bot"
+        href="#resp"
+        class="botLink"
+        onclick="showPage('recipeBotForm')"
+      >
+        <svg
+          width="128"
+          height="128"
+          viewBox="0 0 128 128"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-label="TryTasty AI Bot"
         >
-          <svg
-            width="128"
-            height="128"
-            viewBox="0 0 128 128"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-label="TryTasty AI Bot"
-          >
-            <!-- Head -->
-            <rect x="20" y="28" width="88" height="72" rx="20" fill="#FF8C42" />
+          <!-- Head -->
+          <rect x="20" y="28" width="88" height="72" rx="20" fill="#FF8C42" />
 
-            <!-- Visor -->
-            <rect x="32" y="44" width="64" height="28" rx="14" fill="#111827" />
+          <!-- Visor -->
+          <rect x="32" y="44" width="64" height="28" rx="14" fill="#111827" />
 
-            <!-- Visor lights -->
-            <circle cx="52" cy="58" r="4" fill="#4ADE80" />
-            <circle cx="64" cy="58" r="4" fill="#4ADE80" />
-            <circle cx="76" cy="58" r="4" fill="#4ADE80" />
+          <!-- Visor lights -->
+          <circle cx="52" cy="58" r="4" fill="#4ADE80" />
+          <circle cx="64" cy="58" r="4" fill="#4ADE80" />
+          <circle cx="76" cy="58" r="4" fill="#4ADE80" />
 
-            <!-- Side bolts -->
-            <circle cx="20" cy="64" r="4" fill="#D97706" />
-            <circle cx="108" cy="64" r="4" fill="#D97706" />
+          <!-- Side bolts -->
+          <circle cx="20" cy="64" r="4" fill="#D97706" />
+          <circle cx="108" cy="64" r="4" fill="#D97706" />
 
-            <!-- Neck -->
-            <rect x="52" y="100" width="24" height="8" rx="4" fill="#111827" />
+          <!-- Neck -->
+          <rect x="52" y="100" width="24" height="8" rx="4" fill="#111827" />
 
-            <!-- Antenna -->
-            <line
-              x1="64"
-              y1="16"
-              x2="64"
-              y2="28"
-              stroke="#111827"
-              stroke-width="3"
-            />
-            <circle cx="64" cy="12" r="4" fill="#4ADE80" />
-          </svg>
-        </a>
-      </nav>
+          <!-- Antenna -->
+          <line
+            x1="64"
+            y1="16"
+            x2="64"
+            y2="28"
+            stroke="#111827"
+            stroke-width="3"
+          />
+          <circle cx="64" cy="12" r="4" fill="#4ADE80" />
+        </svg>
+      </a>
+    </nav>
 
     <main id="main">
-     
       <section id="recipeList">
         <h2 class="available">Available Recipes</h2>
         <nav class="page">
@@ -261,8 +256,8 @@
                 />
                 -->
 
-              <!-- Visor -->
-               <!--
+        <!-- Visor -->
+        <!--
               <rect
                 x="32"
                 y="44"
@@ -273,19 +268,19 @@
                 />
               -->
 
-              <!-- Visor lights 
+        <!-- Visor lights 
               
               <circle cx="52" cy="58" r="4" fill="#4ADE80" />
               <circle cx="64" cy="58" r="4" fill="#4ADE80" />
               <circle cx="76" cy="58" r="4" fill="#4ADE80" />
               -->
 
-              <!-- Side bolts 
+        <!-- Side bolts 
               <circle cx="20" cy="64" r="4" fill="#D97706" />
               <circle cx="108" cy="64" r="4" fill="#D97706" />
               -->
-              
-              <!-- Neck 
+
+        <!-- Neck 
               <rect
               x="52"
               y="100"
@@ -296,7 +291,7 @@
               />
               -->
 
-              <!-- Antenna 
+        <!-- Antenna 
               <line
                 x1="64"
                 y1="16"
@@ -327,23 +322,31 @@
         </form>
         -->
 
-        <iframe id="JotFormIFrame-019c9de4aa0c75df85356f4282eb4ead5d57" title="Nia: Recipe Consultant"
-  onload="window.parent.scrollTo(0,0)" allowtransparency="true"
-  allow="geolocation; microphone; camera; fullscreen"
-  src="https://agent.jotform.com/019c9de4aa0c75df85356f4282eb4ead5d57?embedMode=iframe&background=1&shadow=1"
-  frameborder="0" style="
-    max-width:100%;
-    height:688px;
-    border:none;
-    
-    width:100%;
-  " scrolling="no">
-</iframe>
-<script src='https://cdn.jotfor.ms/s/umd/2488061bd6d/for-form-embed-handler.js'></script>
-<script>
-  window.jotformEmbedHandler("iframe[id='JotFormIFrame-019c9de4aa0c75df85356f4282eb4ead5d57']",
-    "https://www.jotform.com")
-</script>
+        <iframe
+          id="JotFormIFrame-019c9de4aa0c75df85356f4282eb4ead5d57"
+          title="Nia: Recipe Consultant"
+          onload="window.parent.scrollTo(0, 0)"
+          allowtransparency="true"
+          allow="geolocation; microphone; camera; fullscreen"
+          src="https://agent.jotform.com/019c9de4aa0c75df85356f4282eb4ead5d57?embedMode=iframe&background=1&shadow=1"
+          frameborder="0"
+          style="
+            max-width: 100%;
+            height: 688px;
+            border: none;
+
+            width: 100%;
+          "
+          scrolling="no"
+        >
+        </iframe>
+        <script src="https://cdn.jotfor.ms/s/umd/2488061bd6d/for-form-embed-handler.js"></script>
+        <script>
+          window.jotformEmbedHandler(
+            "iframe[id='JotFormIFrame-019c9de4aa0c75df85356f4282eb4ead5d57']",
+            "https://www.jotform.com",
+          );
+        </script>
       </div>
     </main>
 
@@ -439,20 +442,38 @@
         </div>
         <!-- End TrustBox widget -->
 
-         <a href="https://www.nxgntools.com/tools/trytasty?utm_source=trytasty" target="_blank" rel="noopener" style="display: inline-block; width: auto;">
-    <img src="https://www.nxgntools.com/api/embed/trytasty?type=FEATURED_ON&hideUpvotes=true" alt="NextGen Tools Badge - The #1 AI Tools Directory & Launch Platform" style="height: 48px; width: auto;" />
-</a>
+        <a
+          href="https://www.nxgntools.com/tools/trytasty?utm_source=trytasty"
+          target="_blank"
+          rel="noopener"
+          style="display: inline-block; width: auto"
+        >
+          <img
+            src="https://www.nxgntools.com/api/embed/trytasty?type=FEATURED_ON&hideUpvotes=true"
+            alt="NextGen Tools Badge - The #1 AI Tools Directory & Launch Platform"
+            style="height: 48px; width: auto"
+          />
+        </a>
 
-<!--BUILDINPUBLC WIDGET-->
-<a href="https://forg.to/products/trytasty" target="_blank" rel="noopener">
-  <img src="https://forg.to/api/badges/upvote/trytasty?theme=dark&shape=rounded" alt="TryTasty - Upvote on Forg on forg." height="48" />
-</a>
+        <!--BUILDINPUBLC WIDGET-->
+        <a
+          href="https://forg.to/products/trytasty"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="https://forg.to/api/badges/upvote/trytasty?theme=dark&shape=rounded"
+            alt="TryTasty - Upvote on Forg on forg."
+            height="48"
+          />
+        </a>
       </section>
 
       <section class="footerContainer footerMiddleContainer">
         <div class="newsletter-box">
           <label for="newsletterEmail" class="newsletter-label">
-Unlock Exclusive Snack Ideas: Join Our Newsletter!          </label>
+            Unlock Exclusive Snack Ideas: Join Our Newsletter!
+          </label>
 
           <form
             action="https://formspree.io/f/xykdzlvv"

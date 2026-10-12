@@ -5,7 +5,7 @@
 
 :root {
   --link-color: #ff4500;
-  --btn-bg: #ff6a00;
+  --primary: #ff6a00;
   --bg: #464545;
   --main-bg: #1e1e1e;
   --color: #ffffff;
@@ -42,7 +42,9 @@ body {
   margin: 0;
 }
 body {
-  transition: background-color 0.9s ease-in-out, color 0.9s ease-in-out;
+  transition:
+    background-color 0.9s ease-in-out,
+    color 0.9s ease-in-out;
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Push footer to the bottom */

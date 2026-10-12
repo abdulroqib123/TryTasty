@@ -1,37 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Cookiebot -->
-    <script
-      id="Cookiebot"
-      src="https://consent.cookiebot.com/uc.js"
-      data-cbid="3eaa47f0-2a50-46a7-a7da-73a27cec1245"
-      type="text/javascript"
-    ></script>
-
-    <!-- Cookie declaration -->
-    <script
-      id="CookieDeclaration"
-      src="https://consent.cookiebot.com/3eaa47f0-2a50-46a7-a7da-73a27cec1245/cd.js"
-      type="text/javascript"
-    ></script>
-
     <!-- logic -->
-    <!-- Google tag (GA4) -->
-    <script type="text/plain" data-cookieconsent="statistics">
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-DDLCL6XBQR', {
-        anonymize_ip: true
-      });
-    </script>
-
-    <script
-      type="text/plain"
-      data-cookieconsent="statistics"
-      src="https://www.googletagmanager.com/gtag/js?id=G-DDLCL6XBQR"
-    ></script>
 
     <!-- TrustBox script -->
     <script
@@ -48,6 +18,35 @@
       content="Explore TryTasty videos featuring real recipe testing, reactions, and behind-the-scenes cooking moments—no tutorials, just honest food content.
 "
     />
+
+    <!--SCYBUD UI-->
+    <link rel="stylesheet" href="https://ui.scybud.com/css/variables.css" />
+    <link rel="stylesheet" href="https://ui.scybud.com/css/typography.css" />
+    <link rel="stylesheet" href="https://ui.scybud.com/css/layout.css" />
+    <link rel="stylesheet" href="https://ui.scybud.com/css/animations.css" />
+
+    <!--COMPONENTS-->
+    <link
+      rel="stylesheet"
+      href="https://ui.scybud.com/components/sidebar/sidebar.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://ui.scybud.com/components/buttons/global-buttons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://ui.scybud.com/components/buttons/nav-buttons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://ui.scybud.com/components/buttons/modals.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://ui.scybud.com/components/forms/empty-state.css"
+    />
+
     <meta property="og:type" content="website" />
     <meta content="TryTasty" property="og:title" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -75,14 +74,7 @@
     <link rel="manifest" href="favicon/site.webmanifest" />
   </head>
   <body>
-    <!--PRELOADER-->
-    <div id="preloader">
-      <div class="logo">TryTasty</div>
-      <div class="beggingText">Just a moment.We are sorry for the delay.</div>
-      <div class="tt-sizzle-loader">
-        <span></span><span></span><span></span><span></span>
-      </div>
-    </div>
+   
 
     <!--HEADER-->
     <header>
@@ -96,7 +88,6 @@
           <div class="logo">TryTasty</div>
         </a>
       </div>
-
     </header>
     <div class="overlay"></div>
 
@@ -129,9 +120,7 @@
                <script differ async src="https://www.tiktok.com/embed.js"></script>
             </section>
       -->
-      <section id="videosPage">
-        
-      </section>
+      <section id="videosPage"></section>
     </main>
 
     <!-- Small screen bottom navigation -->
@@ -223,15 +212,24 @@
           >
         </div>
         <!-- End TrustBox widget -->
-                <a href="https://www.nxgntools.com/tools/trytasty?utm_source=trytasty" target="_blank" rel="noopener" style="display: inline-block; width: auto;">
-    <img src="https://www.nxgntools.com/api/embed/trytasty?type=FEATURED_ON&hideUpvotes=true" alt="NextGen Tools Badge - The #1 AI Tools Directory & Launch Platform" style="height: 48px; width: auto;" />
-</a>
+        <a
+          href="https://www.nxgntools.com/tools/trytasty?utm_source=trytasty"
+          target="_blank"
+          rel="noopener"
+          style="display: inline-block; width: auto"
+        >
+          <img
+            src="https://www.nxgntools.com/api/embed/trytasty?type=FEATURED_ON&hideUpvotes=true"
+            alt="NextGen Tools Badge - The #1 AI Tools Directory & Launch Platform"
+            style="height: 48px; width: auto"
+          />
+        </a>
       </section>
 
       <section class="footerContainer footerMiddleContainer">
         <div class="newsletter-box">
           <label for="newsletterEmail" class="newsletter-label">
-Unlock Exclusive Snack Ideas: Join Our Newsletter!
+            Unlock Exclusive Snack Ideas: Join Our Newsletter!
           </label>
 
           <form
@@ -303,30 +301,29 @@ Unlock Exclusive Snack Ideas: Join Our Newsletter!
     </footer>
 
     <script>
-async function loadYouTubeFeed() {
-  const url = "https://api.rss2json.com/v1/api.json?rss_url=https://www.youtube.com/feeds/videos.xml?channel_id=UCCAtvnaTk1qiE-uef8k4rCA";
+      async function loadYouTubeFeed() {
+        const url =
+          "https://api.rss2json.com/v1/api.json?rss_url=https://www.youtube.com/feeds/videos.xml?channel_id=UCCAtvnaTk1qiE-uef8k4rCA";
 
-  const res = await fetch(url);
-  const data = await res.json();
+        const res = await fetch(url);
+        const data = await res.json();
 
-  const videosContainer = document.getElementById("videosPage");
-  videosContainer.innerHTML = "";
+        const videosContainer = document.getElementById("videosPage");
+        videosContainer.innerHTML = "";
 
-  data.items.forEach(item => {
-    const videoId = item.guid.replace("yt:video:", "");
+        data.items.forEach((item) => {
+          const videoId = item.guid.replace("yt:video:", "");
 
-    const iframe = document.createElement("iframe");
-    iframe.src = `https://www.youtube.com/embed/${videoId}`;
-    iframe.allowFullscreen = true;
+          const iframe = document.createElement("iframe");
+          iframe.src = `https://www.youtube.com/embed/${videoId}`;
+          iframe.allowFullscreen = true;
 
-    videosContainer.appendChild(iframe);
-  });
-}
+          videosContainer.appendChild(iframe);
+        });
+      }
 
-loadYouTubeFeed();
-
-</script>
-
+      loadYouTubeFeed();
+    </script>
 
     <script src="nav.js" defer></script>
     <script type="module" src="main.js" defer></script>

@@ -1,12 +1,10 @@
-
-body.darkMode form{
-    --form-bg: #f5f5f5;
+body.darkMode form {
+  --form-bg: #f5f5f5;
   --input-textarea-bg: #ffffff;
   --input-textarea-color: #1a1a1a;
   --input-textarea-border: #cfcfcf;
-  --btn-bg: #ff6a00;
-    --link: #ff4500;
-
+  --primary: #ff6a00;
+  --link: #ff4500;
 }
 /* Form */
 .auth-form {
@@ -42,7 +40,8 @@ label {
 }
 
 /* Inputs */
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 14px;
   margin: 20px 0 4px;
@@ -55,15 +54,18 @@ input, textarea {
 textarea {
   min-height: 100px;
 }
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-color: #ff8800;
-  box-shadow: 0 0 0 3px rgba(255,136,0,0.3);
+  box-shadow: 0 0 0 3px rgba(255, 136, 0, 0.3);
   outline: none;
 }
 
 /* Buttons */
-button, #popup-button, #loginLink {
-  background: var(--btn-bg);
+button,
+#popup-button,
+#loginLink {
+  background: var(--primary);
   border: none;
   padding: 14px;
   border-radius: 10px;
@@ -78,23 +80,27 @@ button, #popup-button, #loginLink {
 button:hover {
   background: #ff8b1a;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 button:focus {
   opacity: 0.9;
 }
 
-#logoutBtn, #loginLink {
+#logoutBtn,
+#loginLink {
   color: #1d1d1d;
   flex: 1;
   border: none;
   margin-left: 30px;
-background: #ff6b6b;
+  background: #ff6b6b;
   box-shadow: 0 4px 10px rgba(255, 107, 107, 0.3);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-#logoutBtn:hover, #loginLink:hover {
+#logoutBtn:hover,
+#loginLink:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(255, 107, 107, 0.4);
 }
@@ -109,7 +115,7 @@ background: #ff6b6b;
   margin: 20px auto;
   flex-wrap: wrap;
   width: 100%;
-  flex-direction: column; 
+  flex-direction: column;
 }
 #actionBtn button {
   width: 80%;

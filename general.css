@@ -3,41 +3,41 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
+/* App tokens with no Scybud UI equivalent, plus brand overrides */
 :root {
-  --bg: #ebe9e5e8;
-  --main-bg: #f7f7f7;
-  --desc-bg: #fcdab9;
-  --color: #333;
-  --header-bg: rgba(255, 255, 255, 0.7);
   --header-color: linear-gradient(90deg, orange, orangered);
-  --icon-color: #0d0d0d;
-  --shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  --padding: 10px;
+  --primary: #ff6a00;
+  --link: #ff7300;
+  --link-color-hover: #f59f1d;
   --preloader-bg: linear-gradient(135deg, #fffdfd, #d6d5d4);
   --infoNote-bg: #ff4500;
   --infoNote-color: #fff3cd;
-  --filter: blur(20px) brightness(90%);
   --bottomNav-color: #e3e3e3;
   --active-color: #ff4500;
-  --padding: 10px;
-  --font-size: 1rem;
-  --radius: 8px;
-  --btn-bg: #ff6a00;
-  --link-color: #ff7300;
-  --link-color-hover: #f59f1d;
+  --icon-color: #0d0d0d;
+  --desc-bg: #fcdab9;
 }
+
+/* Light values for Scybud tokens (Scybud's :root is the dark theme) */
+body:not(.darkMode) {
+  --bg-primary: #ebe9e5e8;
+  --surface-primary: #f7f7f7;
+  --card-bg: #f7f7f7;
+  --text-primary: #333;
+  --header-bg: rgba(255, 255, 255, 0.7);
+  --shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  --filter: blur(20px) brightness(90%);
+   --desc-bg: #44321f;
+}
+
+/* Only what Scybud UI does not already provide in dark */
 body.darkMode {
-  --link-color: #f59f1d;
+  --link: #f59f1d;
   --link-color-hover: #ff7300;
-  --desc-bg: #44321f;
-  --bg: #1e1e1e;
-  --main-bg: #1e1e1e;
-  --color: #ffffff;
-  --header-bg: rgba(0, 0, 0, 0.7);
-  --shadow: 0 0 10px 0 rgb(0, 0, 0);
   --preloader-bg: linear-gradient(135deg, #0d0d0d, #1e1e1e);
   --infoNote-bg: #fff3cd;
   --infoNote-color: #ff4500;
-  --filter: blur(60px) brightness(60%);
   --bottomNav-color: #1e1e1e;
   --active-color: #ffff00;
   --icon-color: #ffffff;
@@ -59,10 +59,10 @@ body {
   flex-direction: column;
   min-height: 100vh; /* Push footer to the bottom */
   font-family: "Poppins", sans-serif;
-  background-color: var(--bg);
-  color: var(--color);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
   line-height: 1.6;
-  font-size: var(--font-size);
+  font-size: var(--text-md);
 }
 
 ::selection {
@@ -190,7 +190,7 @@ header .logo {
   font-weight: 600;
   margin: 3px 10px 2px 5px;
   font-size: 1.5rem;
-  color: var(--color);
+  color: var(--text-primary);
 }
 /*MAIN ELEMENT*/
 main {
@@ -201,8 +201,8 @@ main {
   overflow-x: hidden;
   margin: 20px auto 70px;
   padding: calc(var(--padding) * 2);
-  background-color: var(--main-bg);
-  border-radius: var(--radius);
+  background-color: var(--surface-primary);
+  border-radius: var(--radius-sm);
   box-shadow: var(--shadow);
 }
 #toast {
@@ -260,7 +260,7 @@ main {
 }
 .loadLine,
 .loadBar {
-  border-radius: calc(var(--radius) / 2);
+  border-radius: calc(var(--radius-sm) / 2);
 }
 .loadLine {
   background: #ff4500;
@@ -291,7 +291,7 @@ main {
 a {
   transition: 0.4s;
   text-decoration: none;
-  color: var(--link-color);
+  color: var(--link);
 }
 
 a:hover {
@@ -322,13 +322,13 @@ a .profileImg {
   margin-top: 4px;
 }
 a.userProfileLink span {
-  color: var(--color);
+  color: var(--text-primary);
   font-size: clamp(0.6rem, 2vw, 10%);
   margin: 0;
 }
 
 .social-icons a {
-  color: var(--color);
+  color: var(--text-primary);
   font-size: 28px;
   margin: 0 12px;
   text-decoration: none;
@@ -354,7 +354,7 @@ a.userProfileLink span {
   width: 40px;
   height: 40px;
   padding: 0;
-  background: var(--main-bg);
+  background: var(--surface-primary);
   border: 1px solid #111;
 }
 
@@ -375,11 +375,11 @@ a.userProfileLink span {
     padding: 10px calc(var(--padding) * 2);
     flex-wrap: wrap;
     background-color: var(--bottomNav-color);
-    border-radius: var(--radius) var(--radius) 0 0;
+    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
     animation: slideIn 1s ease;
   }
   #bottomNavContainer a {
-    width: calc(var(--font-size) * 2);
+    width: calc(var(--text-md) * 2);
     height: 100%;
     color: var(--icon-color);
     transition: all 0.5s ease;
@@ -463,7 +463,7 @@ a.userProfileLink span {
   margin-top: 5px;
   color: #ffffff;
   font-weight: 600;
-  font-size: calc(var(--font-size) / 1.5);
+  font-size: calc(var(--text-md) / 1.5);
 }
 #scybudApps .container img {
   border-radius: 20px;
@@ -500,19 +500,19 @@ a.userProfileLink span {
   max-width: 600px;
 }
 .modalContentContainer {
-  color: var(--color);
+  color: var(--text-primary);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 4px 30px;
   border-radius: 8px;
-  background: var(--main-bg);
-  border: 2px solid var(--btn-bg);
+  background: var(--surface-primary);
+  border: 2px solid var(--primary);
   backdrop-filter: blur(100px) brightness(60%);
 }
 .feedbackModalContentContainer {
-  color: var(--color);
+  color: var(--text-primary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -520,17 +520,17 @@ a.userProfileLink span {
   width: 100%;
   padding: 4px 30px;
   border-radius: 8px;
-  background: var(--main-bg);
-  border: 2px solid var(--btn-bg);
+  background: var(--surface-primary);
+  border: 2px solid var(--primary);
   backdrop-filter: blur(100px) brightness(60%);
 }
 .modalContentContainer h2,
 p {
-  color: var(--color);
+  color: var(--text-primary);
 }
 .feedbackModalContentContainer h2,
 .feedbackModalContentContainer p {
-  color: var(--color);
+  color: var(--text-primary);
   margin: 2px;
 }
 .closeModal {
@@ -541,7 +541,7 @@ p {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: var(--bg);
+  background-color: var(--bg-primary);
 }
 .closeModal:hover {
   opacity: 0.8;
@@ -555,7 +555,7 @@ p {
   padding: 14px;
   width: 100%;
   text-align: center;
-  color: var(--color);
+  color: var(--text-primary);
   border-radius: 10px;
   font-size: 17px;
   font-weight: 600;
@@ -564,13 +564,13 @@ p {
   margin: 10px auto;
   min-width: 40%;
   background: none;
-  border: 2px solid var(--btn-bg);
+  border: 2px solid var(--primary);
   text-decoration: none;
 }
 
 .loginBtn:hover {
-  background: var(--btn-bg);
-  color: var(--color);
+  background: var(--primary);
+  color: var(--text-primary);
   text-decoration: none;
 }
 
