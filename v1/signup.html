@@ -1,61 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <title>TryTasty|Signup</title>
-        <meta charset="utf-8">
-        <meta name="description" content="Discover exciting new recipes with TryTasty — your one-click destination for quick, tasty,
-         and easy-to-make snacks. Explore flavors, try something new, and cook with confidence.">
-         <meta property="og:type" content="website">
-         <meta content="TryTasty" property="og:title">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <link rel="stylesheet" href="login.css">
-        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    </head>
-    <body>
+  <head>
+    <title>TryTasty|Signup</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Discover exciting new recipes with TryTasty — your one-click destination for quick, tasty,
+         and easy-to-make snacks. Explore flavors, try something new, and cook with confidence."
+    />
+    <meta property="og:type" content="website" />
+    <meta content="TryTasty" property="og:title" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="page-nav">
+        <a href="index.html">
+          <i class="bx bx-home" style="color: black; font-size: 24px"></i>
+          <span style="color: black; font-size: 24px; text-decoration: none"
+            >Home</span
+          >
+        </a>
+        <a href="bot.html">
+          <i class="bx bx-bot" style="color: black; font-size: 24px"></i>
+          <span style="color: black; font-size: 24px; text-decoration: none"
+            >AI Bot</span
+          >
+        </a>
+      </nav>
+    </header>
+    <main>
+      <div id="login-form">
+        <form>
+          <h3>Signup To TryTasty</h3>
+          <label for="emailForSignp">Email:</label>
+          <input
+            id="emailForSignup"
+            type="email"
+            placeholder="examble@gmail.com"
+          />
+          <label for="passwordForSignup">Password:</label>
+          <input
+            id="passwordForSignup"
+            type="password"
+            placeholder="Enter Your Password"
+          />
+          <label for="re-enterPasswordForSignup">Re-enter Password:</label>
+          <input
+            id="re-enterPasswordForSignup"
+            type="password"
+            placeholder="Repeat Password"
+          />
+          <button type="button" onclick="signup(event)">Signup</button>
 
-        <header>
-            
-            <nav class="page-nav">
-               <a href="index.html">
-                    <i class='bx bx-home' style="color: black; font-size: 24px;"></i>
-                    <span style="color: black; font-size: 24px; text-decoration: none;">Home</span>
-                </a>
-                <a href="bot.html">
-                      <i class='bx bx-bot' style="color: black; font-size: 24px;"></i>
-                      <span style="color: black; font-size: 24px; text-decoration: none;">AI Bot</span>
-                </a> 
-                      <a href="videos.html">
-                <i class="fas fa-video" style="color: black; font-size: 24px;"></i>
-                  <span style="color: black; font-size: 24px; text-decoration: none;">Videos</span>
-                </a>
-            </nav>
-        </header>
-        <main>
-              <div id="login-form">
-       <form>
-         
-         <h3>Signup To TryTasty</h3>
-         <label for="emailForSignp">Email:</label>
-         <input id="emailForSignup" type="email" placeholder="examble@gmail.com">
-         <label for="passwordForSignup">Password:</label>
-         <input id="passwordForSignup" type="password" placeholder="Enter Your Password">
-         <label for="re-enterPasswordForSignup">Re-enter Password:</label>
-         <input id="re-enterPasswordForSignup" type="password" placeholder="Repeat Password">
-        <button type="button" onclick="signup(event)">Signup</button>
-        
+          <p>Have an account? <a href="login.html">Login Here</a></p>
+        </form>
+      </div>
+    </main>
 
-         <p>Have an account? <a href="login.html">Login Here</a></p>
-       </form>
-     </div>
-        </main>
-
-<script type="module" src="main.js"></script>
-
-    </body>
+    <script type="module" src="main.js"></script>
+  </body>
 </html>
-

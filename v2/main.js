@@ -14,7 +14,6 @@ const nonUserMessage = document.getElementById("non-userMessage");
 const recipeForm = document.getElementById("recipeSubmissionForm");
 const loginBtn = document.getElementById("loginBtn");
 const signupBtn = document.getElementById("signupBtn");
-const videosPage = document.getElementById("videosPage");
 const userName = document.getElementById("userName");
 const Useremail = document.getElementById("Useremail");
 const loginLink = document.getElementById("loginLink");
@@ -37,7 +36,6 @@ onUserAuthChange((user) => {
     loginInputForm && (loginInputForm.style.display = "none");
     nonUserMessage && (nonUserMessage.style.display = "none");
     recipeForm && (recipeForm.style.display = "block");
-    videosPage && (videosPage.style.display = "block");
   } else {
     Useremail && (Useremail.innerText = "Login first");
     userName && (userName.innerText = "Login first");
@@ -48,7 +46,6 @@ onUserAuthChange((user) => {
     recipeForm && (recipeForm.style.display = "none");
     welcomeText && (welcomeText.innerText = "");
     loginInputForm && (loginInputForm.style.display = "block");
-    videosPage && (videosPage.style.display = "none");
   }
 });
 

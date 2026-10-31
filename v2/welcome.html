@@ -1,45 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <!-- Cookiebot script -->
-    <script
-      id="Cookiebot"
-      src="https://consent.cookiebot.com/uc.js"
-      data-cbid="3eaa47f0-2a50-46a7-a7da-73a27cec1245"
-      type="text/javascript"
-    ></script>
-
-    <script
-      id="CookieDeclaration"
-      src="https://consent.cookiebot.com/3eaa47f0-2a50-46a7-a7da-73a27cec1245/cd.js"
-      type="text/javascript"
-      async
-    ></script>
-
-    <!-- Google Analytics (gtag.js) -->
-    <script>
-      window.addEventListener("CookieConsentDeclaration", function () {
-        if (Cookiebot.consents.statistics) {
-          const gtagScript = document.createElement("script");
-          gtagScript.src =
-            "https://www.googletagmanager.com/gtag/js?id=G-DDLCL6XBQR";
-          gtagScript.async = true;
-          document.head.appendChild(gtagScript);
-
-          gtagScript.onload = function () {
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-              dataLayer.push(arguments);
-            }
-            window.gtag = gtag;
-
-            gtag("js", new Date());
-            gtag("config", "G-DDLCL6XBQR", { anonymize_ip: true });
-          };
-        }
-      });
-    </script>
-
     <title>TryTasty | Quick & Tasty Snack Recipes</title>
     <meta charset="utf-8" />
     <meta
@@ -51,9 +12,9 @@
     <meta content="TryTasty" property="og:title" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- DO NOT REMOVE — your CSS links -->
+    <!-- DO NOT REMOVE —  CSS links -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="../general.css">
+    <link rel="stylesheet" href="../general.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
@@ -79,21 +40,21 @@
 
   <body>
     <main>
-      <h1 style="color: orangered;">Welcome To TryTasty</h1>
+      <h1 style="color: orangered">Welcome To TryTasty</h1>
 
       <p>
-        Discover exciting new recipes with <b>TryTasty</b> — your one-click destination
-        for quick, tasty, and easy-to-make snacks. Explore flavors, try something new,
-        and cook with confidence.
+        Discover exciting new recipes with <b>TryTasty</b> — your one-click
+        destination for quick, tasty, and easy-to-make snacks. Explore flavors,
+        try something new, and cook with confidence.
       </p>
 
       <p>Click the button below to start exploring recipes!</p>
 
-      <button onclick="window.location.href=`../index.html`;">
+      <button onclick="window.location.href = `../index.html`">
         Explore TryTasty
       </button>
 
-      <button onclick="window.location.href=`login.html`;">
+      <button onclick="window.location.href = `login.html`">
         Login/Signup
       </button>
     </main>
@@ -157,14 +118,14 @@
       <hr />
 
       <div>
-        <h5 style="padding-top: 20px;">Contact us</h5>
+        <h5 style="padding-top: 20px">Contact us</h5>
 
         <p>
           <b>Email:</b>
           <a
-            style="color: orangered;"
-            onmouseover="this.style.color=`orange`;"
-            onmouseout="this.style.color=`orangered`;"
+            style="color: orangered"
+            onmouseover="this.style.color = `orange`"
+            onmouseout="this.style.color = `orangered`"
             href="mailto:scybudtech@gmail.com"
             target="_blank"
           >
@@ -184,11 +145,5 @@
     </footer>
 
     <!-- Cookiebot declaration (your original) -->
-    <script
-      id="CookieDeclaration"
-      src="https://consent.cookiebot.com/3eaa47f0-2a50-46a7-a7da-73a27cec1245/cd.js"
-      type="text/javascript"
-      async
-    ></script>
   </body>
 </html>

@@ -1,124 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <title>TryTasty | Submit a recipe</title>
-        <meta charset="utf-8">
-        <meta name="description" content="Discover exciting new recipes with TryTasty — your one-click destination for quick, tasty,
-         and easy-to-make snacks. Explore flavors, try something new, and cook with confidence.">
-         <meta property="og:type" content="website">
-         <meta content="TryTasty" property="og:title">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <link rel="stylesheet" href="Recipe.css">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    </head>
-    <body>
+  <head>
+    <title>TryTasty | Submit a recipe</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Discover exciting new recipes with TryTasty — your one-click destination for quick, tasty,
+         and easy-to-make snacks. Explore flavors, try something new, and cook with confidence."
+    />
+    <meta property="og:type" content="website" />
+    <meta content="TryTasty" property="og:title" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Recipe.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://res.cloudinary.com/dc1bmavl5/image/upload/v1746104911/TryTasty-logo_lcvbvd.png"
+        alt="TryTasty Logo"
+      />
+      <nav class="page-nav">
+        <a href="index.html">
+          <i class="bx bx-home" style="color: black; font-size: 24px"></i>
+          <span style="color: black; font-size: 24px; text-decoration: none"
+            >Home</span
+          >
+        </a>
+        <a href="bot.html">
+          <i class="bx bx-bot" style="color: black; font-size: 24px"></i>
+          <span style="color: black; font-size: 24px; text-decoration: none"
+            >AI Bot</span
+          >
+        </a>
+      </nav>
+    </header>
+    <main>
+      <h1 id="non-userMessage">
+        <a href="login.html">Login</a> to submit a recipe
+      </h1>
+      <section id="recipeSubmissionForm">
+        <form action="https://formspree.io/f/myzpzgej" method="POST">
+          <label>
+            Your name:
+            <input
+              type="text"
+              name="name"
+              placeholder="e.g. John Mally"
+              required
+            />
+          </label>
 
-        <header>
-             <img src="https://res.cloudinary.com/dc1bmavl5/image/upload/v1746104911/TryTasty-logo_lcvbvd.png"  alt="TryTasty Logo">
-            <nav class="page-nav">
-                <a href="index.html">
-                    <i class='bx bx-home' style="color: black; font-size: 24px;"></i>
-                    <span style="color: black; font-size: 24px; text-decoration: none;">Home</span>
-                </a>
-                <a href="bot.html">
-                      <i class='bx bx-bot' style="color: black; font-size: 24px;"></i>
-                      <span style="color: black; font-size: 24px; text-decoration: none;">AI Bot</span>
-                </a> 
-                      <a href="videos.html">
-                <i class="fas fa-video" style="color: black; font-size: 24px;"></i>
-                  <span style="color: black; font-size: 24px; text-decoration: none;">Videos</span>
-                </a>
-            </nav>
-        </header>
-        <main>
-           <h1 id="non-userMessage"><a href="login.html">Login</a> to submit a recipe</h1>
-          <section id="recipeSubmissionForm">
-            <form action="https://formspree.io/f/myzpzgej" method="POST">
-  <label>
-    Your name:
-    <input type="text" name="name" placeholder="e.g. John Mally" required>
-  </label>
-  
-  <label>
-    Your email:
-    <input type="email" name="email" placeholder="example@gmail.com"  required>
-  </label>
-  
-  <label>
-    Your recipe:
-    <textarea name="message" placeholder="Ingredients:egg, milk. Instructions:Mix egg and milk with..."></textarea>
-  </label>
-  <p><b>Note:</b>Your ingredients and intructions should have a column(:)</p>
+          <label>
+            Your email:
+            <input
+              type="email"
+              name="email"
+              placeholder="example@gmail.com"
+              required
+            />
+          </label>
 
-  <button type="submit">Submit</button>
-</form>
+          <label>
+            Your recipe:
+            <textarea
+              name="message"
+              placeholder="Ingredients:egg, milk. Instructions:Mix egg and milk with..."
+            ></textarea>
+          </label>
+          <p>
+            <b>Note:</b>Your ingredients and intructions should have a column(:)
+          </p>
 
-          </section>
-          <script>
-              // Auto-resize textareas
-  document.querySelectorAll("textarea").forEach(textarea => {
-    textarea.addEventListener("input", () => {
-      textarea.style.height = "auto";
-      textarea.style.height = textarea.scrollHeight + "px";
-    });
-  });
-
-          </script>
-        </main>
-        <!-- Firebase SDKs (old global namespace style) -->
-<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-storage.js"></script>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <script>
+        // Auto-resize textareas
+        document.querySelectorAll("textarea").forEach((textarea) => {
+          textarea.addEventListener("input", () => {
+            textarea.style.height = "auto";
+            textarea.style.height = textarea.scrollHeight + "px";
+          });
+        });
+      </script>
+    </main>
+    <!-- Firebase SDKs (old global namespace style) -->
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-storage.js"></script>
 
     <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyAuKSZm7BF9pxHW6kkAbhP0pbUw9QxErd0",
-    authDomain: "trytasty-64537.firebaseapp.com",
-    projectId: "trytasty-64537",
-   storageBucket: "trytasty-64537.appspot.com",
-    messagingSenderId: "379426398000",
-    appId: "1:379426398000:web:49b7236df3218d7306b2f5",
-    measurementId: "G-ZMW8ZTX39M"
-  };
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyAuKSZm7BF9pxHW6kkAbhP0pbUw9QxErd0",
+        authDomain: "trytasty-64537.firebaseapp.com",
+        projectId: "trytasty-64537",
+        storageBucket: "trytasty-64537.appspot.com",
+        messagingSenderId: "379426398000",
+        appId: "1:379426398000:web:49b7236df3218d7306b2f5",
+        measurementId: "G-ZMW8ZTX39M",
+      };
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
-<script type="module" src="main.js"></script>
-
-
-    </body>
-            <footer>
-          <h5>Follow Creator, learn as well!</h5>
-          <div class="social-icons">
-  <a href="https://www.tiktok.com/@scyflix5855?is_from_webapp=1&sender_device=pc" target="_blank" title="tiktok"><i class="fab fa-tiktok"></i></a>            
-  <a href="https://www.facebook.com/profile.php?id=61566637364542" target="_blank"><i class="fab fa-facebook" title="facebook"></i></a>
-  <a href="https://x.com/Scyflix5855" target="_blank"><i class="fab fa-twitter" title="twitter"></i></a>
-  <a href="https://www.instagram.com/scyflix5855/" target="_blank"><i class="fab fa-instagram" title="instagram"></i></a>
-  <a href="https://www.linkedin.com/in/abdulroqib-oladipo-a85197253/" target="_blank"><i class="fab fa-linkedin" title="linkedin"></i></a>
-  <a href="https://www.youtube.com/channel/UCvkuxqW8dq9G_yD55rO_4sg" target="_blank"><i class="fab fa-youtube" title="youtube"></i></a>
-</div>
-<hr>
-<a href="privacyGerman.html">Impressum & Datenschutz</a> <br>
-<a href="submit.html">Submit a recipe</a>
-<p> &copy;2025 Scybud. All Rights reserved. </p>
-    </footer>
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+    <script type="module" src="main.js"></script>
+  </body>
+  <footer>
+    <h5>Follow Creator, learn as well!</h5>
+    <div class="social-icons">
+      <a
+        href="https://www.tiktok.com/@scyflix5855?is_from_webapp=1&sender_device=pc"
+        target="_blank"
+        title="tiktok"
+        ><i class="fab fa-tiktok"></i
+      ></a>
+      <a
+        href="https://www.facebook.com/profile.php?id=61566637364542"
+        target="_blank"
+        ><i class="fab fa-facebook" title="facebook"></i
+      ></a>
+      <a href="https://x.com/Scyflix5855" target="_blank"
+        ><i class="fab fa-twitter" title="twitter"></i
+      ></a>
+      <a href="https://www.instagram.com/scyflix5855/" target="_blank"
+        ><i class="fab fa-instagram" title="instagram"></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/abdulroqib-oladipo-a85197253/"
+        target="_blank"
+        ><i class="fab fa-linkedin" title="linkedin"></i
+      ></a>
+      <a
+        href="https://www.youtube.com/channel/UCvkuxqW8dq9G_yD55rO_4sg"
+        target="_blank"
+        ><i class="fab fa-youtube" title="youtube"></i
+      ></a>
+    </div>
+    <hr />
+    <a href="privacyGerman.html">Impressum & Datenschutz</a> <br />
+    <a href="submit.html">Submit a recipe</a>
+    <p>&copy;2025 Scybud. All Rights reserved.</p>
+  </footer>
 </html>
-
-
-

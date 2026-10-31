@@ -26,7 +26,6 @@ const navLinks = [
   { text: "Favorites", href: "../favs.html" },
   { text: "Shop", href: "../buy/shop.html" },
 
-  { text: "Videos", href: "../videos.html" },
   { text: "Community", href: "../../TryTasty-community/community.html" },
   { text: "Submit", href: "../submit.html" },
   { text: "Privacy Policy", href: "privacyGerman.html" },

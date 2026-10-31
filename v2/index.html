@@ -4,24 +4,6 @@
     <link rel="canonical" href="https://trytasty.de/index.html" />
     <meta name="google-adsense-account" content="ca-pub-5719179006644682" />
 
-    <script>
-      window.addEventListener("CookiebotOnConsentReady", function () {
-        if (Cookiebot.consents.statistics) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag() {
-            dataLayer.push(arguments);
-          }
-          gtag("js", new Date());
-          gtag("config", "G-DDLCL6XBQR", { anonymize_ip: true });
-
-          const s = document.createElement("script");
-          s.src = "https://www.googletagmanager.com/gtag/js?id=G-DDLCL6XBQR";
-          s.async = true;
-          document.head.appendChild(s);
-        }
-      });
-    </script>
-
     <title>TryTasty | Quick & Tasty Snack Recipes</title>
     <meta charset="utf-8" />
     <meta
@@ -360,50 +342,7 @@
           </a>
         </nav>
       </section>
-      <!--bot-->
-      <div id="recipeBotForm" class="page">
-        <!--Base44 created ai 
-        <iframe
-          src="https://trytastyai.base44.app"
-          width="100%"
-          height="600"
-          frameborder="0"
-          style="border: none; border-radius: 14px"
-        ></iframe>
-      -->
-        <form id="recipeBot">
-          <h2 style="color: orange">
-            Hi, I`m Resp, your recipe suggestion Bot🤖.
-          </h2>
-          <p id="bot-question">
-            Ask me any recipe by inputing your name and ingredients below.
-          </p>
-          <div class="infoNote">
-            <b>Note:</b> I only support <b>1 ingredient input</b> at the moment.
-            Please enter your most <b>dominant</b> ingredient for better
-            suggestions
-          </div>
-          <label for="searcher">Your name</label>
-          <input
-            type="text"
-            id="searcher"
-            placeholder="e.g John Mally"
-            autocomplete="name"
-          />
-          <label for="userInput">Input a single recipe</label>
-          <input
-            type="text"
-            id="userInput"
-            placeholder="e.g egg"
-            autocomplete="off"
-            list="ingredients"
-            required
-          />
-          <button type="button" onclick="findRecipe()">Suggest</button>
-        </form>
 
-        <section id="suggestions"></section>
-      </div>
       <section>
         <!-- Pages -->
         <div id="riceAndYogurtBowl" class="page" style="display: none">
@@ -1212,19 +1151,6 @@
         >
           <path
             d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Z"
-          />
-        </svg>
-      </a>
-
-      <a href="videos.html" aria-label="Videos">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 -960 960 960"
-          fill="currentColor"
-          aria-hidden="true"
-        >
-          <path
-            d="m460-380 280-180-280-180v360ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Z"
           />
         </svg>
       </a>

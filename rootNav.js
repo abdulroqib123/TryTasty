@@ -36,8 +36,6 @@ const navLinks = [
   { text: "Home", href: "index.html", class: "toastNavLink" },
   { text: "Favorites", href: "v3/favs.html", class: "toastNavLink" },
   { text: "Utensils", href: "v3/buy/shop.html", class: "toastNavLink" },
-
-  { text: "Videos", href: "v3/videos.html", class: "toastNavLink" },
   { text: "Submit", href: "v3/submit.html" },
   {
     text: "Community",
@@ -148,20 +146,6 @@ bottomNavContainer.innerHTML = `
           <span>Shop</span>
 </a>
 
-      <a href="v3/videos.html" aria-label="Videos">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 -960 960 960"
-          fill="currentColor"
-          aria-hidden="true"
-        >
-          <path
-            d="m460-380 280-180-280-180v360ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Z"
-          />
-        </svg>
-          <span>Videos</span>
-
-      </a>
       
       <a href="v3/userProfile.html" aria-label="Profile">
     <svg

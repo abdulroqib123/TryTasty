@@ -14,7 +14,6 @@ function setupMenuIcons() {
 const navLinks = [
   { text: "Home", href: "index.html", class: "toastNavLink" },
   { text: "Favorites", href: "favs.html", class: "toastNavLink" },
-  { text: "Videos", href: "videos.html", class: "toastNavLink" },
   { text: "Submit", href: "submit.html" },
   { text: "Community", href: "../TryTasty mvp creation/original.html" },
   { text: "Privacy Policy", href: "privacyGerman.html" },
