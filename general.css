@@ -630,12 +630,6 @@ footer p {
   font-size: 0.9rem;
   font-weight: 700;
 }
-.trustpilot-widget {
-  max-height: 52px;
-  max-width: fit-content;
-  overflow: hidden;
-  margin: 0;
-}
 @media (max-width: 500px) {
   .footerContainer {
     display: flex;

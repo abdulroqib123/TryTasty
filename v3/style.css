@@ -631,11 +631,6 @@ footer svg {
   text-decoration: underline;
 }
 
-.trustpilot-widget {
-  max-height: 52px;
-  overflow: hidden;
-}
-
 /*NEWS LETTER INPUT FIELD STYLE*/
 .newsletter-box {
   padding: 1.5rem;
