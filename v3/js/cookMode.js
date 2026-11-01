@@ -16,7 +16,7 @@ function enterCookMode(recipeId) {
 
   const recipeUtilitySection = document.getElementById("recipeUtility");
 
-  // 🔥 Load multiple recipe files (same as main recipe page)
+  // Load multiple recipe files (same as main recipe page)
   const recipeFiles = [
     "data/recipes/recipes1.json",
     "data/recipes/recipes2.json",
@@ -58,14 +58,14 @@ function enterCookMode(recipeId) {
           <b  contenteditable="false">Tip:</b> ${recipe.utility.notes.defaultTip}
         </div>
 
-        <h3>Equipments:</h3>
+        <h3>Utensils:</h3>
         <section class="listContainer equipmentListContainer">
           ${recipe.utility.equipment
             .map(
               (e) => `<label><input type="checkbox"><span>${e}</span></label>`,
             )
             .join("")}
-          <a class="buyBtn" href="buy/shop.html">Get In Shop</a>
+          <a class="buyBtn" target="_blank" href="buy/shop.html">Get In Shop</a>
         </section>
 
         <h3>Steps:</h3>
