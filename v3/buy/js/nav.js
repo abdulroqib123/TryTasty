@@ -138,6 +138,10 @@ function callToFeedback() {
 }
 
 setTimeout(() => {
-  //call the funtion after approximately 5mins
-  callToFeedback();
-}, 299999);
+  //call the funtion after 5mins
+  const FIVE_MINUTES = 5 * 60 * 1000;
+
+  setTimeout(() => {
+    callToFeedback();
+  }, FIVE_MINUTES);
+})
