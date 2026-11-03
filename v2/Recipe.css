@@ -58,22 +58,7 @@ body.lightMode main nav {
   visibility: visible;
   opacity: 1;
 }
-#videosPage {
-  flex-direction: column;
-  display: flex;
-  height: auto;
-  width: auto;
-}
 
-#videosPage iframe {
-  margin: 0 auto;
-  width: 100%;
-  height: 90vh;
-  object-fit: cover;
-  position: sticky;
-  top: 0;
-  border-radius: 12px;
-}
 #popup.popuphide {
   display: none;
 }

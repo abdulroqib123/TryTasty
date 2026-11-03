@@ -17,15 +17,7 @@ This project is part of **Scybud**, a student-led creative brand exploring tech,
 - Save recipes to favorite list
 - 👥 User accounts
 
----
 
-## 🔮 Later features
-
-- 👥 User profiles
-- 📝 Recipe uploads with images
-- ❤️ Likes, comments, and social interaction
-
----
 
 ## 🌐 Live Site
 
@@ -39,7 +31,6 @@ This project is part of **Scybud**, a student-led creative brand exploring tech,
 - HTML
 - CSS
 - JavaScript
-- Firebase
 
 ---
 

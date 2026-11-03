@@ -267,9 +267,7 @@ footer {
   #bottomNavContainer a[href*="favs"] svg {
     transform: scale(0.9);
   }
-  #bottomNavContainer a[href*="videos"] svg {
-    margin: 3px 3px 0 0;
-  }
+
 }
 
 #otherAppsIcon {

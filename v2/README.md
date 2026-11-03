@@ -39,7 +39,6 @@ This project is part of **Scybud**, a student-led creative brand exploring tech,
 - HTML
 - CSS
 - JavaScript
-- Firebase
 
 ---
 

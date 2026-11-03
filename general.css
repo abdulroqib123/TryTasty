@@ -109,10 +109,10 @@ body {
 }
 @keyframes slideIn {
   from {
-    transform: translateX(-100px);
+    transform: translateY(100%);
   }
   to {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 .tt-sizzle-loader {
@@ -368,14 +368,15 @@ a.userProfileLink span {
     margin: 0 auto;
     position: sticky;
     z-index: 9;
-    bottom: -1px;
+    bottom: var(--space-md);
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    max-width: 200px;
     padding: 10px calc(var(--padding) * 2);
     flex-wrap: wrap;
-    background-color: var(--bottomNav-color);
-    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+    backdrop-filter: var(--filter);
+    border-radius: var(--radius-lg);
     animation: slideIn 1s ease;
   }
   #bottomNavContainer a {
@@ -397,7 +398,6 @@ a.userProfileLink span {
 
   #bottomNavContainer a:hover {
     opacity: 0.8;
-    border-top: 1px solid;
     text-decoration: none;
     transform: translateY(-1px);
   }
@@ -411,12 +411,11 @@ a.userProfileLink span {
   #bottomNavContainer a[href*="favs"] svg {
     transform: scale(0.9);
   }
-  #bottomNavContainer a[href*="videos"] svg {
-    margin: 3px 3px 0 0;
-  }
+
   #bottomNavContainer span {
     font-size: 0.6rem;
     font-weight: 600;
+    display: none;
   }
 }
 

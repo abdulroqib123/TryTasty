@@ -1,20 +1,4 @@
 /* ── Layout ── */
-#videosPage {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: var(--space-lg);
-  padding: var(--space-md);
-  width: 100%;
-}
-
-#videosPage iframe {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: var(--radius-md);
-  border: none;
-  object-fit: cover;
-  box-shadow: var(--shadow);
-}
 
 /* ── Popup ── */
 #popup.popuphide {
@@ -288,12 +272,6 @@ a:hover {
     right: 14px;
     font-size: var(--text-xs);
     padding: 6px 12px;
-  }
-
-  #videosPage {
-    grid-template-columns: 1fr;
-    gap: 18px;
-    padding: 12px;
   }
 
   iframe {
