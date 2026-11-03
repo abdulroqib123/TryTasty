@@ -1,5 +1,3 @@
-
-
 //SIDEBAR TOGGLE
 const sidebar = document.getElementById("sidebar");
 const overlay = document.querySelector(".overlay");
@@ -26,7 +24,7 @@ function setupMenuIcons() {
 const navLinks = [
   { text: "Home", href: "../../index.html", class: "toastNavLink" },
   { text: "Favorites", href: "../favs.html", class: "toastNavLink" },
-  {text: "Utensils", href: "shop.html", class: "toastNavLink"},
+  { text: "Utensils", href: "shop.html", class: "toastNavLink" },
   { text: "Submit", href: "../submit.html" },
   { text: "Privacy Policy", href: "../doc/privacyGerman.html" },
   { text: "About TryTasty", href: "../doc/about.html" },
@@ -48,12 +46,11 @@ navLinks.forEach((link) => {
 
 //Version number
 const paragraph = document.createElement("p");
-paragraph.innerText = "Version: 3.3.8";
+paragraph.innerText = "Version: 4.0.0";
 sidebar.appendChild(paragraph);
 
 const upperNavContainer = document.querySelector(".upperNavContainer");
 if (upperNavContainer) {
-
   setupMenuIcons();
 }
 
