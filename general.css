@@ -199,7 +199,7 @@ main {
   max-width: 1400px;
   width: 100%;
   overflow-x: hidden;
-  margin: 20px auto 70px;
+  margin: 20px auto 0;
   padding: calc(var(--padding) * 2);
   background-color: var(--surface-primary);
   border-radius: var(--radius-sm);
@@ -366,7 +366,7 @@ a.userProfileLink span {
     display: flex;
     align-self: center;
     margin: 0 auto;
-    position: sticky;
+    position: fixed;
     z-index: 9;
     bottom: var(--space-md);
     align-items: center;
