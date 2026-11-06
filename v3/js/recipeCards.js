@@ -128,9 +128,10 @@ fetch("v3/data/recipes/recipes1.json")
     return r.json();
   })
   .then((data) => {
-    // Optional: Filter local ones too if you want to be safe
     const safeOriginals = data.recipes.filter(isHalalRecipe);
-    appendRecipesToGrid(safeOriginals);
+    const shuffledRecipes = shuffleArray(safeOriginals);
+
+    appendRecipesToGrid(shuffledRecipes);
   })
   .catch((error) => {
     console.error("Initial load error:", error);
@@ -146,13 +147,26 @@ function loadLocalBatch(filePath) {
     })
     .then((data) => {
       const safeOriginals = data.recipes.filter(isHalalRecipe);
-      appendRecipesToGrid(safeOriginals);
+      const shuffledRecipes = shuffleArray(safeOriginals);
+
+      appendRecipesToGrid(shuffledRecipes);
       currentBatch = 2;
     })
     .catch((error) => {
       console.error("Local batch error:", error);
       handlePageFailure();
     });
+}
+
+ function shuffleArray(array) {
+  const shuffled = [...array];
+
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+
+  return shuffled;
 }
 
 // --- CORE FETCH 3: STEPPED API LOOPS ---
@@ -180,7 +194,10 @@ function loadNextExternalApiSet() {
 }
 
 function renderCachedApiSegment(count) {
-  const nextSegment = cachedApiMeals.slice(apiMealIndex, apiMealIndex + count);
+const nextSegment = shuffleArray(cachedApiMeals).slice(
+  apiMealIndex,
+  apiMealIndex + count,
+);
 
   if (nextSegment.length === 0) {
     loadMoreBtn.innerHTML = "<span>No More Snacks Available</span>";
