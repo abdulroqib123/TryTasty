@@ -173,6 +173,8 @@ function renderRecipePage(recipe, isExternal) {
   // Bind side-effects functionality
   setupShareButton();
   addToFav();
+
+  window.ScybudPromo?.track('recipe_open');
 }
 
 // --- HELPER FUNCTION: SHARING LAYER ---
