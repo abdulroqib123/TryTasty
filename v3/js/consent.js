@@ -1,5 +1,5 @@
 const GA_ID = "G-DDLCL6XBQR";
-const KEY = "tt_consent";
+const KEY = "consent-preferences";
 const MAX_AGE_DAYS = 365;
 const POLICY_URL = "/v3/doc/privacyGerman.html#cookies";
 let analyticsLoaded = false;
@@ -70,14 +70,19 @@ function showBanner() {
   box.innerHTML = `
     <style>
       #tt-consent{position:fixed;left:16px;right:16px;bottom:16px;max-width:520px;z-index:9999;background:#111;border:1px solid #333;border-radius:12px;padding:20px;color:#fff;font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;box-shadow:0 8px 30px rgba(0,0,0,.5)}
+      #tt-consent h3{color:#bbb;}
       #tt-consent p{margin:0 0 16px;color:#b3b3b3}
       #tt-consent a{color:#ff6a00}
       #tt-consent .tt-btns{display:flex;gap:10px}
       #tt-consent button{flex:1;padding:12px;border-radius:10px;border:1px solid #ff6a00;background:#1c1c1c;color:#fff;font:inherit;font-weight:600;cursor:pointer}
       #tt-consent button:hover{background:#ff6a00;color:#000}
     </style>
-    <p>We use Google Analytics to understand how TryTasty is used. It only runs if you accept. <a href="${POLICY_URL}">Learn more</a></p>
-    <div class="tt-btns">
+<h3>Cookies and local storage</h3>
+<p>
+  We use cookies and local storage to analyze usage and to limit how often we
+  show promotions for other Scybud products. Rejecting does not affect the app.
+  <a href="/v3/doc/privacyGerman.html">Privacy policy</a>
+</p>    <div class="tt-btns">
       <button type="button" data-choice="no">Decline</button>
       <button type="button" data-choice="yes">Accept</button>
     </div>`;
